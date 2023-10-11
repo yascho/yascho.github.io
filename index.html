@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@YanScholten" />
 <meta name="twitter:creator" content="@Yan Scholten" />
 <script type="application/ld+json">
-{"description":"Master&#39;s student in Informatics at the Technical University of Munich","dateModified":"2023-06-16T11:14:42+02:00","name":"Yan Scholten","url":"https://yascho.github.io","author":{"@type":"Person","name":"Yan Scholten"},"headline":"Yan Scholten","@type":"WebSite","@context":"https://schema.org"}</script>
+{"name":"Yan Scholten","author":{"@type":"Person","name":"Yan Scholten"},"url":"https://yascho.github.io","@type":"WebSite","description":"Master&#39;s student in Informatics at the Technical University of Munich","headline":"Yan Scholten","dateModified":"2023-10-11T11:13:38+02:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 	<meta name="google-site-verification" content="chbllHIfU7hyPiWimLppN2ds-jk7A3FxoRpNI2xsg8Q" />
@@ -53,8 +53,8 @@
 					<a href="https://www.cs.cit.tum.de/daml/team/yan-scholten/" target="_blank" rel="noopener noreferrer"><i class="bi bi-briefcase-fill"></i></a>
 					<a href="https://github.com/yascho" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
 					<!--<a href="https://twitter.com/YanScholten" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>-->
-					<a rel="me" href="https://sigmoid.social/@yanscholten"><i class="bi bi-mastodon"></i></a>
-					<a href="https://scholar.google.com/citations?user=8G2bJ7sAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
+					<!-- <a rel="me" href="https://sigmoid.social/@yanscholten"><i class="bi bi-mastodon"></i></a> -->
+					<a href="https://scholar.google.com/citations?hl=en&user=8G2bJ7sAAAAJ&sortby=pubdate" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
 				
 			</div>
 		</div>
@@ -101,11 +101,10 @@
 <div class="container clearfix pe-0 ps-0 ps-md-3 force-justify">
 	<img src="/assets/yan-scholten.jpg" id="me" class="img-fluid float-md-end mb-3 ms-md-3 mt-1 d-none d-md-block d-xl-block" alt="Yan Scholten" />
 	<p>
-	<br />
 	I am a PhD student in the 
 	<a href="https://www.cs.cit.tum.de/en/daml/home/" target="_blank" rel="noopener noreferrer">Data Analytics and Machine Learning</a> group at the <a href="https://www.cit.tum.de/en/cit/home/" target="_blank" rel="noopener noreferrer">Technical University of Munich (TUM)</a> under the supervision of <a href="https://www.cs.cit.tum.de/en/daml/team/damlguennemann/" target="_blank" rel="noopener noreferrer">Prof. Stephan Günnemann</a>.
 	My research interests include <strong>robust machine learning</strong> and 
-	<strong>machine learning on graphs</strong>.
+	<strong>machine learning on graphs</strong>. Since 2023 I am associated to the <a href="https://zuseschoolrelai.de/" target="_blank" rel="noopener noreferrer">Konrad Zuse School of Excellence in Reliable AI</a>.
 	</p>
 	<br />
 	<p>
@@ -119,12 +118,152 @@
 
 <div class="container pe-0 ps-0 ps-md-3">
 	<ol class="bibliography"><li><div class="container mt-2 mb-3 ps-0 pe-0">
+<a class="title" href="">Hierarchical Randomized Smoothing</a>
+<br />
+<div class="container authors p-0">
+
+	
+		<b>Yan Scholten</b>,
+	
+
+	
+		Jan Schuchardt,
+	
+
+	
+		Aleksandar Bojchevski,
+	
+
+	
+		and Stephan Günnemann
+	
+
+<br />
+In <span class="font-italic">Conference on Neural Information Processing Systems</span>, NeurIPS 2023.
+</div>
+<div class="btn-group pt-1 flex-wrap" role="group">
+	
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#scholten2023hierarchical" aria-expanded="false" aria-controls="scholten2023hierarchical">Abs</a>
+	
+	
+		<a role="button" href="https://www.cs.cit.tum.de/daml/hierarchical-smoothing/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
+	
+	
+	
+	
+	
+	
+	
+</div>
+<div class="collapse mt-1 p-0" id="scholten2023hierarchical">
+	<div class="card card-body">
+		Real-world data is complex and often consists of objects that can be decomposed into multiple entities (e.g. images into pixels, graphs into interconnected nodes). Randomized smoothing is a powerful framework for making models provably robust against small changes to their inputs – by guaranteeing robustness of the majority vote when randomly adding noise before classification. Yet, certifying robustness on such complex data via randomized smoothing is challenging when adversaries do not arbitrarily perturb entire objects (e.g. images) but only a subset of their entities (e.g. pixels). As a solution, we introduce hierarchical randomized smoothing: We partially smooth objects by adding random noise only on a randomly selected subset of their entities. By adding noise in a more targeted manner than existing methods we obtain stronger robustness guarantees while maintaining high accuracy. We initialize hierarchical smoothing using different noising distributions, yielding novel robustness certificates for discrete and continuous domains. We experimentally demonstrate the importance of hierarchical smoothing in image and node classification, where it yields superior robustness-accuracy trade-offs. Overall, hierarchical smoothing is an important contribution towards models that are both – certifiably robust to perturbations and accurate.
+	</div>
+</div>
+</div></li>
+<li><div class="container mt-2 mb-3 ps-0 pe-0">
+<a class="title" href="">(Provable) Adversarial Robustness for Group Equivariant Tasks: Graphs, Point Clouds, Molecules, and More</a>
+<br />
+<div class="container authors p-0">
+
+	
+		Jan Schuchardt,
+	
+
+	
+		<b>Yan Scholten</b>,
+	
+
+	
+		and Stephan Günnemann
+	
+
+<br />
+In <span class="font-italic">Conference on Neural Information Processing Systems</span>, NeurIPS 2023.
+</div>
+<div class="btn-group pt-1 flex-wrap" role="group">
+	
+	
+		<a role="button" href="https://www.cs.cit.tum.de/daml/equivariance-robustness/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
+	
+	
+	
+	
+	
+	
+	
+</div>
+<div class="collapse mt-1 p-0" id="schuchardt2023provable">
+	<div class="card card-body">
+		
+	</div>
+</div>
+</div></li>
+<li><div class="container mt-2 mb-3 ps-0 pe-0">
+<a class="title" href="https://arxiv.org/abs/2310.04285">Assessing Robustness via Score-Based Adversarial Image Generation</a>
+<br />
+<div class="container authors p-0">
+
+	
+		Marcel Kollovieh,
+	
+
+	
+		Lukas Gosch,
+	
+
+	
+		<b>Yan Scholten</b>,
+	
+
+	
+		Marten Lienen,
+	
+
+	
+		and Stephan Günnemann
+	
+
+<br />
+In <span class="font-italic">arXiv preprint</span>,  2023.
+</div>
+<div class="btn-group pt-1 flex-wrap" role="group">
+	
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#kollovieh2023assessing" aria-expanded="false" aria-controls="kollovieh2023assessing">Abs</a>
+	
+	
+	
+		<a role="button" href="https://arxiv.org/abs/2310.04285" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
+	
+	
+	
+	
+	
+	<a role="button" onclick="var txt=`@inproceedings{kollovieh2023assessing,
+  author = {Kollovieh, Marcel and Gosch, Lukas and Scholten, Yan and Lienen, Marten and Günnemann, Stephan},
+  title = {Assessing Robustness via Score-Based Adversarial Image Generation},
+  booktitle = {arXiv preprint},
+  year = {2023},
+  pdf = {https://arxiv.org/abs/2310.04285},
+  abs = {Most adversarial attacks and defenses focus on perturbations within small l_p-norm constraints. However, l_p threat models cannot capture all relevant semantic-preserving perturbations, and hence, the scope of robustness evaluations is limited. In this work, we introduce Score-Based Adversarial Generation (ScoreAG), a novel framework that leverages the advancements in score-based generative models to generate adversarial examples beyond l_p-norm constraints, so-called unrestricted adversarial examples, overcoming their limitations. Unlike traditional methods, ScoreAG maintains the core semantics of images while generating realistic adversarial examples, either by transforming existing images or synthesizing new ones entirely from scratch. We further exploit the generative capability of ScoreAG to purify images, empirically enhancing the robustness of classifiers. Our extensive empirical evaluation demonstrates that ScoreAG matches the performance of state-of-the-art attacks and defenses across multiple benchmarks. This work highlights the importance of investigating adversarial examples bounded by semantics rather than l_p-norm constraints. ScoreAG represents an important step towards more encompassing robustness assessments. }
+}
+`; copy(txt)" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+	
+</div>
+<div class="collapse mt-1 p-0" id="kollovieh2023assessing">
+	<div class="card card-body">
+		Most adversarial attacks and defenses focus on perturbations within small l_p-norm constraints. However, l_p threat models cannot capture all relevant semantic-preserving perturbations, and hence, the scope of robustness evaluations is limited. In this work, we introduce Score-Based Adversarial Generation (ScoreAG), a novel framework that leverages the advancements in score-based generative models to generate adversarial examples beyond l_p-norm constraints, so-called unrestricted adversarial examples, overcoming their limitations. Unlike traditional methods, ScoreAG maintains the core semantics of images while generating realistic adversarial examples, either by transforming existing images or synthesizing new ones entirely from scratch. We further exploit the generative capability of ScoreAG to purify images, empirically enhancing the robustness of classifiers. Our extensive empirical evaluation demonstrates that ScoreAG matches the performance of state-of-the-art attacks and defenses across multiple benchmarks. This work highlights the importance of investigating adversarial examples bounded by semantics rather than l_p-norm constraints. ScoreAG represents an important step towards more encompassing robustness assessments. 
+	</div>
+</div>
+</div></li>
+<li><div class="container mt-2 mb-3 ps-0 pe-0">
 <a class="title" href="https://yascho.github.io/assets/pdf/scholten2022randomized.pdf">Randomized Message-Interception Smoothing: Gray-box Certificates for Graph Neural Networks</a>
 <br />
 <div class="container authors p-0">
 
 	
-		Yan Scholten,
+		<b>Yan Scholten</b>,
 	
 
 	
@@ -202,7 +341,7 @@ In <span class="font-italic">Conference on Neural Information Processing Systems
 </span>
 		</div>
 		<div class="flex-fill text-end p-0">
-			<span class="text-muted">Last updated: June 16, 2023.</span>
+			<span class="text-muted">Last updated: October 11, 2023.</span>
 		</div>
 	</div>
 </footer>
