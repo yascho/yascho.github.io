@@ -72,6 +72,11 @@
 				  
 				<!--<li class="nav-item"><a aria-current="page" href="/publications">Publications</a></li> -->
 					
+						<li class="nav-item"><a aria-current="page" href="/CV">CV</a></li>
+    				
+				  
+				<!--<li class="nav-item"><a aria-current="page" href="/publications">Publications</a></li> -->
+					
       					<li class="nav-item"><a aria-current="page" href="/publications" class="active">Publications</a></li>
     				
 				       
@@ -125,6 +130,9 @@
 		<a role="button" href="https://arxiv.org/pdf/2507.04219" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
+		<a role="button" href="https://yascho.github.io/partial-model-collapse-unlearning/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Blog</a>
+	
+	
 	
 	
 	
@@ -141,6 +149,7 @@
   url = {https://arxiv.org/abs/2507.04219},
   pdf = {https://arxiv.org/pdf/2507.04219},
   organization = {arXiv preprint},
+  blog = {https://yascho.github.io/partial-model-collapse-unlearning/},
   web = {https://www.cs.cit.tum.de/daml/partial-model-collapse/},
   code = {https://github.com/yascho/partial-model-collapse-unlearning},
   abs = {Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, it also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method - Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes three key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that aligns with real-world privacy constraints.}
@@ -155,7 +164,7 @@
 </div>
 </div></li>
 <li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://arxiv.org/pdf/2507.04446">Tail-aware Adversarial Attacks: A Distributional Approach to Efficient LLM Jailbreaking</a>
+<a class="title" href="https://arxiv.org/pdf/2507.04446">Sampling-aware Adversarial Attacks Against Large Language Models</a>
 <br>
 <div class="container authors p-0">
 
@@ -180,10 +189,10 @@
 </div>
 <div class="btn-group pt-1 flex-wrap" role="group">
 	
-	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#beyer2025tailawareadversarialattacksdistributional" aria-expanded="false"  aria-controls="beyer2025tailawareadversarialattacksdistributional">Abs</a>
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#beyer2025sampling" aria-expanded="false"  aria-controls="beyer2025sampling">Abs</a>
 	
 	
-		<a role="button" href="https://www.cs.cit.tum.de/daml/tail-aware-attacks/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
+		<a role="button" href="https://www.cs.cit.tum.de/daml/sampling-aware-attacks/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
 		<a role="button" href="https://arxiv.org/pdf/2507.04446" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
@@ -193,8 +202,11 @@
 	
 	
 	
-  	<a role="button" onclick="var txt=`@misc{beyer2025tailawareadversarialattacksdistributional,
-  title = {Tail-aware Adversarial Attacks: A Distributional Approach to Efficient LLM Jailbreaking},
+		<a role="button" href="https://github.com/LLM-QC/AdversariaLLM" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Code</a>
+	
+	
+  	<a role="button" onclick="var txt=`@misc{beyer2025sampling,
+  title = {Sampling-aware Adversarial Attacks Against Large Language Models},
   author = {Beyer, Tim and Scholten, Yan and Schwinn*, Leo and Günnemann*, Stephan},
   year = {2025},
   eprint = {2507.04446},
@@ -202,16 +214,17 @@
   primaryclass = {cs.LG},
   url = {https://arxiv.org/abs/2507.04446},
   pdf = {https://arxiv.org/pdf/2507.04446},
-  web = {https://www.cs.cit.tum.de/daml/tail-aware-attacks/},
+  web = {https://www.cs.cit.tum.de/daml/sampling-aware-attacks/},
   organization = {arXiv preprint},
-  abs = {To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point, greedy generations, overlooking the inherently stochastic nature of LLMs. In this paper, we propose a novel framework for adversarial robustness evaluation that explicitly models the entire output distribution, including tail-risks, providing better estimates for model robustness at scale. By casting the attack process as a resource allocation problem between optimization and sampling, we determine compute-optimal tradeoffs and show that integrating sampling into existing attacks boosts ASR by up to 48% and improves efficiency by up to two orders of magnitude. Our framework also enables us to analyze how different attack algorithms affect output harm distributions. Surprisingly, we find that most optimization strategies have little effect on output harmfulness. Finally, we introduce a data-free proof-of-concept objective based on entropy-maximization to demonstrate how our tail-aware perspective enables new optimization targets. Overall, our findings highlight the importance of tail-aware attacks and evaluation protocols to accurately assess and strengthen LLM safety.}
+  code = {https://github.com/LLM-QC/AdversariaLLM},
+  abs = {To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37\% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.}
 }
 `; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
-<div class="collapse mt-1 p-0" id="beyer2025tailawareadversarialattacksdistributional">
+<div class="collapse mt-1 p-0" id="beyer2025sampling">
 	<div class="card card-body">
-		To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point, greedy generations, overlooking the inherently stochastic nature of LLMs. In this paper, we propose a novel framework for adversarial robustness evaluation that explicitly models the entire output distribution, including tail-risks, providing better estimates for model robustness at scale. By casting the attack process as a resource allocation problem between optimization and sampling, we determine compute-optimal tradeoffs and show that integrating sampling into existing attacks boosts ASR by up to 48% and improves efficiency by up to two orders of magnitude. Our framework also enables us to analyze how different attack algorithms affect output harm distributions. Surprisingly, we find that most optimization strategies have little effect on output harmfulness. Finally, we introduce a data-free proof-of-concept objective based on entropy-maximization to demonstrate how our tail-aware perspective enables new optimization targets. Overall, our findings highlight the importance of tail-aware attacks and evaluation protocols to accurately assess and strengthen LLM safety.
+		To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.
 	</div>
 </div>
 </div></li>
@@ -244,6 +257,7 @@
 	
 	
 		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2025probabilistic.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 	
@@ -306,6 +320,7 @@
 	
 	
 		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2025provably.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 	
@@ -389,6 +404,7 @@
 	
 	
 	
+	
   	<a role="button" onclick="var txt=`@misc{schwinn2025adversarial,
   title = {Adversarial Alignment for LLMs Requires Simpler, Reproducible, and More Measurable Objectives},
   author = {Schwinn, Leo and Scholten, Yan and Wollschläger, Tom and Xhonneux, Sophie and Casper, Stephen and Günnemann, Stephan and Gidel, Gauthier},
@@ -443,6 +459,7 @@
 	
 	
 		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2023hierarchical.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 		<a role="button" href="https://nips.cc/virtual/2023/poster/72764" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Talk</a>
@@ -511,6 +528,7 @@
 	
 	
 		<a role="button" href="https://openreview.net/pdf?id=mLe63bAYc7" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 		<a role="button" href="https://nips.cc/virtual/2023/poster/70555" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Talk</a>
@@ -594,6 +612,7 @@
 	
 	
 	
+	
   	<a role="button" onclick="var txt=`@inproceedings{kollovieh2024assessing,
   title = {Assessing Robustness via Score-Based Adversarial Image Generation},
   author = {Kollovieh, Marcel and Gosch, Lukas and Lienen, Marten and Scholten, Yan and Schwinn, Leo and Günnemann, Stephan},
@@ -653,6 +672,7 @@
 	
 	
 		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2022randomized.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 		<a role="button" href="https://www.youtube.com/watch?v=rbFiXrh9Snk" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Talk</a>
@@ -731,6 +751,7 @@
 		<a role="button" href="https://papers.dice-research.org/2020/CIKM-20/heindorf_2020a_public.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
+	
 		<a role="button" href="https://www.youtube.com/watch?v=aza77qJeZBo" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Talk</a>
 	
 	
@@ -796,6 +817,7 @@
 	
 	
 		<a role="button" href="https://webis.de/downloads/publications/papers/heindorf_2019.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 	
@@ -869,6 +891,9 @@
 		<a role="button" href="https://arxiv.org/pdf/2507.04219" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
+		<a role="button" href="https://yascho.github.io/partial-model-collapse-unlearning/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Blog</a>
+	
+	
 	
 	
 	
@@ -885,6 +910,7 @@
   url = {https://arxiv.org/abs/2507.04219},
   pdf = {https://arxiv.org/pdf/2507.04219},
   organization = {arXiv preprint},
+  blog = {https://yascho.github.io/partial-model-collapse-unlearning/},
   web = {https://www.cs.cit.tum.de/daml/partial-model-collapse/},
   code = {https://github.com/yascho/partial-model-collapse-unlearning},
   abs = {Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, it also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method - Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes three key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that aligns with real-world privacy constraints.}
@@ -899,7 +925,7 @@
 </div>
 </div></li>
 <li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://arxiv.org/pdf/2507.04446">Tail-aware Adversarial Attacks: A Distributional Approach to Efficient LLM Jailbreaking</a>
+<a class="title" href="https://arxiv.org/pdf/2507.04446">Sampling-aware Adversarial Attacks Against Large Language Models</a>
 <br />
 <div class="container authors p-0">
 
@@ -924,10 +950,10 @@
 </div>
 <div class="btn-group pt-1 flex-wrap" role="group">
 	
-	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#beyer2025tailawareadversarialattacksdistributional" aria-expanded="false" aria-controls="beyer2025tailawareadversarialattacksdistributional">Abs</a>
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#beyer2025sampling" aria-expanded="false" aria-controls="beyer2025sampling">Abs</a>
 	
 	
-		<a role="button" href="https://www.cs.cit.tum.de/daml/tail-aware-attacks/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
+		<a role="button" href="https://www.cs.cit.tum.de/daml/sampling-aware-attacks/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
 		<a role="button" href="https://arxiv.org/pdf/2507.04446" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
@@ -937,8 +963,11 @@
 	
 	
 	
-  	<a role="button" onclick="var txt=`@misc{beyer2025tailawareadversarialattacksdistributional,
-  title = {Tail-aware Adversarial Attacks: A Distributional Approach to Efficient LLM Jailbreaking},
+		<a role="button" href="https://github.com/LLM-QC/AdversariaLLM" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Code</a>
+	
+	
+  	<a role="button" onclick="var txt=`@misc{beyer2025sampling,
+  title = {Sampling-aware Adversarial Attacks Against Large Language Models},
   author = {Beyer, Tim and Scholten, Yan and Schwinn*, Leo and Günnemann*, Stephan},
   year = {2025},
   eprint = {2507.04446},
@@ -946,16 +975,17 @@
   primaryclass = {cs.LG},
   url = {https://arxiv.org/abs/2507.04446},
   pdf = {https://arxiv.org/pdf/2507.04446},
-  web = {https://www.cs.cit.tum.de/daml/tail-aware-attacks/},
+  web = {https://www.cs.cit.tum.de/daml/sampling-aware-attacks/},
   organization = {arXiv preprint},
-  abs = {To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point, greedy generations, overlooking the inherently stochastic nature of LLMs. In this paper, we propose a novel framework for adversarial robustness evaluation that explicitly models the entire output distribution, including tail-risks, providing better estimates for model robustness at scale. By casting the attack process as a resource allocation problem between optimization and sampling, we determine compute-optimal tradeoffs and show that integrating sampling into existing attacks boosts ASR by up to 48% and improves efficiency by up to two orders of magnitude. Our framework also enables us to analyze how different attack algorithms affect output harm distributions. Surprisingly, we find that most optimization strategies have little effect on output harmfulness. Finally, we introduce a data-free proof-of-concept objective based on entropy-maximization to demonstrate how our tail-aware perspective enables new optimization targets. Overall, our findings highlight the importance of tail-aware attacks and evaluation protocols to accurately assess and strengthen LLM safety.}
+  code = {https://github.com/LLM-QC/AdversariaLLM},
+  abs = {To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37\% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.}
 }
 `; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
-<div class="collapse mt-1 p-0" id="beyer2025tailawareadversarialattacksdistributional">
+<div class="collapse mt-1 p-0" id="beyer2025sampling">
 	<div class="card card-body">
-		To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point, greedy generations, overlooking the inherently stochastic nature of LLMs. In this paper, we propose a novel framework for adversarial robustness evaluation that explicitly models the entire output distribution, including tail-risks, providing better estimates for model robustness at scale. By casting the attack process as a resource allocation problem between optimization and sampling, we determine compute-optimal tradeoffs and show that integrating sampling into existing attacks boosts ASR by up to 48% and improves efficiency by up to two orders of magnitude. Our framework also enables us to analyze how different attack algorithms affect output harm distributions. Surprisingly, we find that most optimization strategies have little effect on output harmfulness. Finally, we introduce a data-free proof-of-concept objective based on entropy-maximization to demonstrate how our tail-aware perspective enables new optimization targets. Overall, our findings highlight the importance of tail-aware attacks and evaluation protocols to accurately assess and strengthen LLM safety.
+		To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.
 	</div>
 </div>
 </div></li>
@@ -988,6 +1018,7 @@
 	
 	
 		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2025probabilistic.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 	
@@ -1050,6 +1081,7 @@
 	
 	
 		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2025provably.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 	
@@ -1133,6 +1165,7 @@
 	
 	
 	
+	
   	<a role="button" onclick="var txt=`@misc{schwinn2025adversarial,
   title = {Adversarial Alignment for LLMs Requires Simpler, Reproducible, and More Measurable Objectives},
   author = {Schwinn, Leo and Scholten, Yan and Wollschläger, Tom and Xhonneux, Sophie and Casper, Stephen and Günnemann, Stephan and Gidel, Gauthier},
@@ -1205,6 +1238,7 @@
 	
 	
 	
+	
   	<a role="button" onclick="var txt=`@inproceedings{kollovieh2024assessing,
   title = {Assessing Robustness via Score-Based Adversarial Image Generation},
   author = {Kollovieh, Marcel and Gosch, Lukas and Lienen, Marten and Scholten, Yan and Schwinn, Leo and Günnemann, Stephan},
@@ -1264,6 +1298,7 @@
 	
 	
 		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2023hierarchical.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 		<a role="button" href="https://nips.cc/virtual/2023/poster/72764" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Talk</a>
@@ -1332,6 +1367,7 @@
 	
 	
 		<a role="button" href="https://openreview.net/pdf?id=mLe63bAYc7" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 		<a role="button" href="https://nips.cc/virtual/2023/poster/70555" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Talk</a>
@@ -1409,6 +1445,7 @@
 	
 	
 		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2022randomized.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 		<a role="button" href="https://www.youtube.com/watch?v=rbFiXrh9Snk" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Talk</a>
@@ -1491,6 +1528,7 @@
 		<a role="button" href="https://papers.dice-research.org/2020/CIKM-20/heindorf_2020a_public.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
+	
 		<a role="button" href="https://www.youtube.com/watch?v=aza77qJeZBo" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Talk</a>
 	
 	
@@ -1560,6 +1598,7 @@
 	
 	
 		<a role="button" href="https://webis.de/downloads/publications/papers/heindorf_2019.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
 	
 	
 	
