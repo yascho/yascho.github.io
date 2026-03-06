@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@YanScholten" />
 <meta name="twitter:creator" content="@Yan Scholten" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Yan Scholten"},"url":"https://yascho.github.io/publications","@type":"WebPage","description":"PhD student in Computer Science at the Technical University of Munich","headline":"Yan Scholten","dateModified":"2025-01-22T20:38:42+01:00","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Yan Scholten"},"url":"https://yascho.github.io/publications","@type":"WebPage","description":"PhD student in Computer Science at the Technical University of Munich","headline":"Yan Scholten","dateModified":"2026-03-06T10:01:54+01:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 	<meta name="google-site-verification" content="chbllHIfU7hyPiWimLppN2ds-jk7A3FxoRpNI2xsg8Q" />
@@ -117,11 +117,11 @@
 	
 
 <br>
-<span class="font-italic">arXiv preprint</span>,  2025.
+<span class="font-italic">International Conference on Learning Representations</span>, ICLR 2026.
 </div>
 <div class="btn-group pt-1 flex-wrap" role="group">
 	
-	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#scholten2025model" aria-expanded="false"  aria-controls="scholten2025model">Abs</a>
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#scholten2026model" aria-expanded="false"  aria-controls="scholten2026model">Abs</a>
 	
 	
 		<a role="button" href="https://www.cs.cit.tum.de/daml/partial-model-collapse/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
@@ -139,27 +139,26 @@
 		<a role="button" href="https://github.com/yascho/partial-model-collapse-unlearning" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Code</a>
 	
 	
-  	<a role="button" onclick="var txt=`@misc{scholten2025model,
+  	<a role="button" onclick="var txt=`@inproceedings{scholten2026model,
   title = {Model Collapse Is Not a Bug but a Feature in Machine Unlearning for LLMs},
   author = {Scholten, Yan and Xhonneux, Sophie and Schwinn*, Leo and Günnemann*, Stephan},
-  year = {2025},
-  eprint = {2507.04219},
-  archiveprefix = {arXiv},
-  primaryclass = {cs.LG},
+  booktitle = {The Fourteenth International Conference on Learning Representations},
+  organization = {International Conference on Learning Representations},
+  year = {2026},
+  abbr = {ICLR},
   url = {https://arxiv.org/abs/2507.04219},
   pdf = {https://arxiv.org/pdf/2507.04219},
-  organization = {arXiv preprint},
   blog = {https://partial-model-collapse-unlearning.github.io/},
   web = {https://www.cs.cit.tum.de/daml/partial-model-collapse/},
   code = {https://github.com/yascho/partial-model-collapse-unlearning},
-  abs = {Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, it also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method - Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes three key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that aligns with real-world privacy constraints.}
+  abs = {Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, but also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method--Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes four key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that better aligns with real-world privacy constraints.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
-<div class="collapse mt-1 p-0" id="scholten2025model">
+<div class="collapse mt-1 p-0" id="scholten2026model">
 	<div class="card card-body">
-		Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, it also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method - Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes three key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that aligns with real-world privacy constraints.
+		Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, but also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method–Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes four key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that better aligns with real-world privacy constraints.
 	</div>
 </div>
 </div></li>
@@ -185,11 +184,11 @@
 	
 
 <br>
-<span class="font-italic">arXiv preprint</span>,  2025.
+<span class="font-italic">International Conference on Learning Representations</span>, ICLR 2026.
 </div>
 <div class="btn-group pt-1 flex-wrap" role="group">
 	
-	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#beyer2025sampling" aria-expanded="false"  aria-controls="beyer2025sampling">Abs</a>
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#beyer2026sampling" aria-expanded="false"  aria-controls="beyer2026sampling">Abs</a>
 	
 	
 		<a role="button" href="https://www.cs.cit.tum.de/daml/sampling-aware-attacks/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
@@ -205,31 +204,30 @@
 		<a role="button" href="https://github.com/LLM-QC/AdversariaLLM" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Code</a>
 	
 	
-  	<a role="button" onclick="var txt=`@misc{beyer2025sampling,
+  	<a role="button" onclick="var txt=`@inproceedings{beyer2026sampling,
   title = {Sampling-aware Adversarial Attacks Against Large Language Models},
   author = {Beyer, Tim and Scholten, Yan and Schwinn*, Leo and Günnemann*, Stephan},
-  year = {2025},
-  eprint = {2507.04446},
-  archiveprefix = {arXiv},
-  primaryclass = {cs.LG},
+  booktitle = {The Fourteenth International Conference on Learning Representations},
+  year = {2026},
+  organization = {International Conference on Learning Representations},
+  abbr = {ICLR},
   url = {https://arxiv.org/abs/2507.04446},
   pdf = {https://arxiv.org/pdf/2507.04446},
   web = {https://www.cs.cit.tum.de/daml/sampling-aware-attacks/},
-  organization = {arXiv preprint},
   code = {https://github.com/LLM-QC/AdversariaLLM},
-  abs = {To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37\% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.}
+  abs = {To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we empirically determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
-<div class="collapse mt-1 p-0" id="beyer2025sampling">
+<div class="collapse mt-1 p-0" id="beyer2026sampling">
 	<div class="card card-body">
-		To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.
+		To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we empirically determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.
 	</div>
 </div>
 </div></li>
 <li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://yascho.github.io/assets/pdf/scholten2025probabilistic.pdf">A Probabilistic Perspective on Unlearning and Alignment for Large Language Models</a>
+<a class="title" href="https://arxiv.org/pdf/2410.03523">A Probabilistic Perspective on Unlearning and Alignment for Large Language Models</a>
 <br>
 <div class="container authors p-0">
 
@@ -256,7 +254,7 @@
 		<a role="button" href="https://www.cs.cit.tum.de/daml/probabilistic-unlearning/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
-		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2025probabilistic.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+		<a role="button" href="https://arxiv.org/pdf/2410.03523" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
 	
@@ -275,18 +273,18 @@
   title = {A Probabilistic Perspective on Unlearning and Alignment for Large Language Models},
   booktitle = {The Thirteenth International Conference on Learning Representations},
   year = {2025},
-  url = {https://openreview.net/forum?id=51WraMid8K},
   organization = {International Conference on Learning Representations},
   abbr = {ICLR},
   web = {https://www.cs.cit.tum.de/daml/probabilistic-unlearning/},
-  pdf = {https://yascho.github.io/assets/pdf/scholten2025probabilistic.pdf},
+  url = {https://arxiv.org/abs/2410.03523},
+  pdf = {https://arxiv.org/pdf/2410.03523},
   poster = {https://yascho.github.io/assets/pdf/scholten2025probabilistic-poster.pdf},
   slides = {https://yascho.github.io/assets/pdf/scholten2025probabilistic-slides.pdf},
   code = {https://github.com/yascho/probabilistic-unlearning},
   abs = {Comprehensive evaluation of Large Language Models (LLMs) is an open research problem. Existing evaluations rely on deterministic point estimates generated via greedy decoding. However, we find that deterministic evaluations fail to capture the whole output distribution of a model, yielding inaccurate estimations of model capabilities. This is particularly problematic in critical contexts such as unlearning and alignment, where precise model evaluations are crucial. To remedy this, we introduce the first formal probabilistic evaluation framework for LLMs. Namely, we propose novel metrics with high probability guarantees concerning the output distribution of a model. Our metrics are application-independent and allow practitioners to make more reliable estimates about model capabilities before deployment. Our experimental analysis reveals that deterministic evaluations falsely indicate successful unlearning and alignment, whereas our probabilistic evaluations better capture model capabilities. We show how to overcome challenges associated with probabilistic outputs in a case study on unlearning by introducing (1) a novel loss based on entropy optimization, and (2) adaptive temperature scaling. We demonstrate that our approach significantly enhances unlearning in probabilistic settings on recent benchmarks. Overall, our proposed shift from point estimates to probabilistic evaluations of output distributions represents an important step toward comprehensive evaluations of LLMs.},
   howpublished = {Oral}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="scholten2025probabilistic">
@@ -296,7 +294,7 @@
 </div>
 </div></li>
 <li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://yascho.github.io/assets/pdf/scholten2025provably.pdf">Provably Reliable Conformal Prediction Sets in the Presence of Data Poisoning</a>
+<a class="title" href="https://arxiv.org/pdf/2410.09878">Provably Reliable Conformal Prediction Sets in the Presence of Data Poisoning</a>
 <br>
 <div class="container authors p-0">
 
@@ -319,7 +317,7 @@
 		<a role="button" href="https://www.cs.cit.tum.de/daml/reliable-conformal-prediction/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
-		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2025provably.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+		<a role="button" href="https://arxiv.org/pdf/2410.09878" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
 	
@@ -336,17 +334,17 @@
   title = {Provably Reliable Conformal Prediction Sets in the Presence of Data Poisoning},
   booktitle = {The Thirteenth International Conference on Learning Representations},
   year = {2025},
-  url = {https://openreview.net/forum?id=ofuLWn8DFZ},
   organization = {International Conference on Learning Representations},
   abbr = {ICLR},
-  pdf = {https://yascho.github.io/assets/pdf/scholten2025provably.pdf},
+  url = {https://arxiv.org/abs/2410.09878},
+  pdf = {https://arxiv.org/pdf/2410.09878},
   poster = {https://yascho.github.io/assets/pdf/scholten2025provably-poster.pdf},
   web = {https://www.cs.cit.tum.de/daml/reliable-conformal-prediction/},
   code = {https://github.com/yascho/reliable_conformal_prediction},
   abs = {Conformal prediction provides model-agnostic and distribution-free uncertainty quantification through prediction sets that are guaranteed to include the ground truth with any user-specified probability. Yet, conformal prediction is not reliable under poisoning attacks where adversaries manipulate both training and calibration data, which can significantly alter prediction sets in practice. As a solution, we propose reliable prediction sets (RPS): the first efficient method for constructing conformal prediction sets with provable reliability guarantees under poisoning. To ensure reliability under training poisoning, we introduce smoothed score functions that reliably aggregate predictions of classifiers trained on distinct partitions of the training data. To ensure reliability under calibration poisoning, we construct multiple prediction sets, each calibrated on distinct subsets of the calibration data. We then aggregate them into a majority prediction set, which includes a class only if it appears in a majority of the individual sets. Both proposed aggregations mitigate the influence of datapoints in the training and calibration data on the final prediction set. We experimentally validate our approach on image classification tasks, achieving strong reliability while maintaining utility and preserving coverage on clean data. Overall, our approach represents an important step towards more trustworthy uncertainty quantification in the presence of data poisoning.},
   howpublished = {Spotlight}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="scholten2025provably">
@@ -417,7 +415,7 @@
   organization = {arXiv preprint},
   abs = {Misaligned research objectives have considerably hindered progress in adversarial robustness research over the past decade. For instance, an extensive focus on optimizing target metrics, while neglecting rigorous standardized evaluation, has led researchers to pursue ad-hoc heuristic defenses that were seemingly effective. Yet, most of these were exposed as flawed by subsequent evaluations, ultimately contributing little measurable progress to the field. In this position paper, we illustrate that current research on the robustness of large language models (LLMs) risks repeating past patterns with potentially worsened real-world implications. To address this, we argue that realigned objectives are necessary for meaningful progress in adversarial alignment. To this end, we build on established cybersecurity taxonomy to formally define differences between past and emerging threat models that apply to LLMs. Using this framework, we illustrate that progress requires disentangling adversarial alignment into addressable sub-problems and returning to core academic principles, such as measureability, reproducibility, and comparability. Although the field presents significant challenges, the fresh start on adversarial robustness offers the unique opportunity to build on past experience while avoiding previous mistakes.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="schwinn2025adversarial">
@@ -427,7 +425,7 @@
 </div>
 </div></li>
 <li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://yascho.github.io/assets/pdf/scholten2023hierarchical.pdf">Hierarchical Randomized Smoothing</a>
+<a class="title" href="https://arxiv.org/pdf/2310.16221">Hierarchical Randomized Smoothing</a>
 <br>
 <div class="container authors p-0">
 
@@ -458,7 +456,7 @@
 		<a role="button" href="https://www.cs.cit.tum.de/daml/hierarchical-smoothing/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
-		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2023hierarchical.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+		<a role="button" href="https://arxiv.org/pdf/2310.16221" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
 	
@@ -479,18 +477,18 @@
   title = {Hierarchical Randomized Smoothing},
   booktitle = {Thirty-seventh Conference on Neural Information Processing Systems},
   year = {2023},
-  url = {https://openreview.net/forum?id=6IhNHKyuJO},
+  url = {https://arxiv.org/abs/2310.16221},
+  pdf = {https://arxiv.org/pdf/2310.16221},
   organization = {Advances in Neural Information Processing Systems},
   abbr = {NeurIPS},
   slides = {https://yascho.github.io/assets/pdf/scholten2023hierarchical-slides.pdf},
   web = {https://www.cs.cit.tum.de/daml/hierarchical-smoothing/},
   code = {https://github.com/yascho/hierarchical_smoothing},
   talk = {https://nips.cc/virtual/2023/poster/72764},
-  pdf = {https://yascho.github.io/assets/pdf/scholten2023hierarchical.pdf},
   poster = {https://yascho.github.io/assets/pdf/scholten2023hierarchical-poster.pdf},
   abs = {Real-world data is complex and often consists of objects that can be decomposed into multiple entities (e.g. images into pixels, graphs into interconnected nodes). Randomized smoothing is a powerful framework for making models provably robust against small changes to their inputs -- by guaranteeing robustness of the majority vote when randomly adding noise before classification. Yet, certifying robustness on such complex data via randomized smoothing is challenging when adversaries do not arbitrarily perturb entire objects (e.g. images) but only a subset of their entities (e.g. pixels). As a solution, we introduce hierarchical randomized smoothing: We partially smooth objects by adding random noise only on a randomly selected subset of their entities. By adding noise in a more targeted manner than existing methods we obtain stronger robustness guarantees while maintaining high accuracy. We initialize hierarchical smoothing using different noising distributions, yielding novel robustness certificates for discrete and continuous domains. We experimentally demonstrate the importance of hierarchical smoothing in image and node classification, where it yields superior robustness-accuracy trade-offs. Overall, hierarchical smoothing is an important contribution towards models that are both -- certifiably robust to perturbations and accurate.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="scholten2023hierarchical">
@@ -556,7 +554,7 @@
   code = {https://github.com/jan-schuchardt/group_equivariance_robustness},
   abs = {A machine learning model is traditionally considered robust if its prediction remains (almost) constant under input perturbations with small norm. However, real-world tasks like molecular property prediction or point cloud segmentation have inherent equivariances, such as rotation or permutation equivariance. In such tasks, even perturbations with large norm do not necessarily change an input's semantic content. Furthermore, there are perturbations for which a model's prediction explicitly needs to change. For the first time, we propose a sound notion of adversarial robustness that accounts for task equivariance. We then demonstrate that provable robustness can be achieved by (1) choosing a model that matches the task's equivariances (2) certifying traditional adversarial robustness. Certification methods are, however, unavailable for many models, such as those with continuous equivariances. We close this gap by developing the framework of equivariance-preserving randomized smoothing, which enables architecture-agnostic certification. We additionally derive the first architecture-specific graph edit distance certificates, i.e. sound robustness guarantees for isomorphism equivariant tasks like node classification. Overall, a sound notion of robustness is an important prerequisite for future work at the intersection of robust and geometric machine learning.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="schuchardt2023provable">
@@ -566,7 +564,7 @@
 </div>
 </div></li>
 <li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://arxiv.org/abs/2310.04285">Assessing Robustness via Score-Based Adversarial Image Generation</a>
+<a class="title" href="https://arxiv.org/pdf/2310.04285">Assessing Robustness via Score-Based Adversarial Image Generation</a>
 <br>
 <div class="container authors p-0">
 
@@ -605,7 +603,7 @@
 		<a role="button" href="https://www.cs.cit.tum.de/daml/scoreag/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
-		<a role="button" href="https://arxiv.org/abs/2310.04285" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+		<a role="button" href="https://arxiv.org/pdf/2310.04285" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
 	
@@ -622,11 +620,11 @@
   year = {2024},
   url = {https://openreview.net/forum?id=7Oqb6zlGWl},
   abbr = {TMLR},
-  pdf = {https://arxiv.org/abs/2310.04285},
+  pdf = {https://arxiv.org/pdf/2310.04285},
   web = {https://www.cs.cit.tum.de/daml/scoreag/},
   abs = {Most adversarial attacks and defenses focus on perturbations within small lp-norm constraints. However, lp threat models cannot capture all relevant semantics-preserving perturbations, and hence, the scope of robustness evaluations is limited. In this work, we introduce Score-Based Adversarial Generation (ScoreAG), a novel framework that leverages the advancements in score-based generative models to generate unrestricted adversarial examples that overcome the limitations of lp-norm constraints. Unlike traditional methods, ScoreAG maintains the core semantics of images while generating adversarial examples, either by transforming existing images or synthesizing new ones entirely from scratch. We further exploit the generative capability of ScoreAG to purify images, empirically enhancing the robustness of classifiers. Our extensive empirical evaluation demonstrates that ScoreAG improves upon the majority of state-of-the-art attacks and defenses across multiple benchmarks. This work highlights the importance of investigating adversarial examples bounded by semantics rather than lp-norm constraints. ScoreAG represents an important step towards more encompassing robustness assessments.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="kollovieh2024assessing">
@@ -636,7 +634,7 @@
 </div>
 </div></li>
 <li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://yascho.github.io/assets/pdf/scholten2022randomized.pdf">Randomized Message-Interception Smoothing: Gray-box Certificates for Graph Neural Networks</a>
+<a class="title" href="https://arxiv.org/pdf/2301.02039">Randomized Message-Interception Smoothing: Gray-box Certificates for Graph Neural Networks</a>
 <br>
 <div class="container authors p-0">
 
@@ -671,7 +669,7 @@
 		<a role="button" href="https://www.cs.cit.tum.de/daml/interception-smoothing/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
-		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2022randomized.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+		<a role="button" href="https://arxiv.org/pdf/2301.02039" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
 	
@@ -693,9 +691,9 @@
   booktitle = {Advances in Neural Information Processing Systems},
   organization = {Advances in Neural Information Processing Systems},
   year = {2022},
-  url = {https://openreview.net/forum?id=t0VbBTw-o8},
   abbr = {NeurIPS},
-  pdf = {https://yascho.github.io/assets/pdf/scholten2022randomized.pdf},
+  url = {https://arxiv.org/abs/2301.02039},
+  pdf = {https://arxiv.org/pdf/2301.02039},
   code = {https://github.com/yascho/interception_smoothing},
   talk = {https://www.youtube.com/watch?v=rbFiXrh9Snk},
   slides = {https://yascho.github.io/assets/pdf/scholten2022randomized-slides.pdf},
@@ -703,7 +701,7 @@
   web = {https://www.cs.cit.tum.de/daml/interception-smoothing/},
   abs = {Randomized smoothing is one of the most promising frameworks for certifying the adversarial robustness of machine learning models, including Graph Neural Networks (GNNs). Yet, existing randomized smoothing certificates for GNNs are overly pessimistic since they treat the model as a black box, ignoring the underlying architecture. To remedy this, we propose novel gray-box certificates that exploit the message-passing principle of GNNs: We randomly intercept messages and carefully analyze the probability that messages from adversarially controlled nodes reach their target nodes. Compared to existing certificates, we certify robustness to much stronger adversaries that control entire nodes in the graph and can arbitrarily manipulate node features. Our certificates provide stronger guarantees for attacks at larger distances, as messages from farther-away nodes are more likely to get intercepted. We demonstrate the effectiveness of our method on various models and datasets. Since our gray-box certificates consider the underlying graph structure, we can significantly improve certifiable robustness by applying graph sparsification.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="scholten2022randomized">
@@ -775,7 +773,7 @@
   talk = {https://www.youtube.com/watch?v=aza77qJeZBo},
   abs = {Causal knowledge is seen as one of the key ingredients to advance artificial intelligence. Yet, few knowledge bases comprise causal knowledge to date, possibly due to significant efforts required for validation. Notwithstanding this challenge, we compile CauseNet, a large-scale knowledge base of claimed causal relations between causal concepts. By extraction from different semi- and unstructured web sources, we collect more than 11 million causal relations with an estimated extraction precision of 83% and construct the first large-scale and open-domain causality graph. We analyze the graph to gain insights about causal beliefs expressed on the web and we demonstrate its benefits in basic causal question answering. Future work may use the graph for causal reasoning, computational argumentation, multi-hop question answering, and more.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="heindorf2020causenet">
@@ -840,7 +838,7 @@
   code = {https://github.com/heindorf/www19-fair-classification},
   abs = {Crowdsourced knowledge bases like Wikidata suffer from low-quality edits and vandalism, employing machine learning-based approaches to detect both kinds of damage. We reveal that state-of-the-art detection approaches discriminate anonymous and new users: benign edits from these users receive much higher vandalism scores than benign edits from older ones, causing newcomers to abandon the project prematurely. We address this problem for the first time by analyzing and measuring the sources of bias, and by developing a new vandalism detection model that avoids them. Our model FAIR-S reduces the bias ratio of the state-of-the-art vandalism detector WDVD from 310.7 to only 11.9 while maintaining high predictive performance at 0.963 ROC AUC and 0.316 PR AUC.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="heindorf2019debiasing">
@@ -854,7 +852,7 @@
 
 <div class="container pe-0 ps-0 ps-md-3">
 
-  <h2>2025</h2>
+  <h2>2026</h2>
   <div class="container">
   	<ol class="bibliography"><li><div class="container mt-2 mb-3 ps-0 pe-0">
 <a class="title" href="https://arxiv.org/pdf/2507.04219">Model Collapse Is Not a Bug but a Feature in Machine Unlearning for LLMs</a>
@@ -878,11 +876,11 @@
 	
 
 <br />
-<span class="font-italic">arXiv preprint</span>,  2025.
+<span class="font-italic">International Conference on Learning Representations</span>, ICLR 2026.
 </div>
 <div class="btn-group pt-1 flex-wrap" role="group">
 	
-	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#scholten2025model" aria-expanded="false" aria-controls="scholten2025model">Abs</a>
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#scholten2026model" aria-expanded="false" aria-controls="scholten2026model">Abs</a>
 	
 	
 		<a role="button" href="https://www.cs.cit.tum.de/daml/partial-model-collapse/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
@@ -900,27 +898,26 @@
 		<a role="button" href="https://github.com/yascho/partial-model-collapse-unlearning" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Code</a>
 	
 	
-  	<a role="button" onclick="var txt=`@misc{scholten2025model,
+  	<a role="button" onclick="var txt=`@inproceedings{scholten2026model,
   title = {Model Collapse Is Not a Bug but a Feature in Machine Unlearning for LLMs},
   author = {Scholten, Yan and Xhonneux, Sophie and Schwinn*, Leo and Günnemann*, Stephan},
-  year = {2025},
-  eprint = {2507.04219},
-  archiveprefix = {arXiv},
-  primaryclass = {cs.LG},
+  booktitle = {The Fourteenth International Conference on Learning Representations},
+  organization = {International Conference on Learning Representations},
+  year = {2026},
+  abbr = {ICLR},
   url = {https://arxiv.org/abs/2507.04219},
   pdf = {https://arxiv.org/pdf/2507.04219},
-  organization = {arXiv preprint},
   blog = {https://partial-model-collapse-unlearning.github.io/},
   web = {https://www.cs.cit.tum.de/daml/partial-model-collapse/},
   code = {https://github.com/yascho/partial-model-collapse-unlearning},
-  abs = {Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, it also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method - Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes three key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that aligns with real-world privacy constraints.}
+  abs = {Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, but also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method--Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes four key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that better aligns with real-world privacy constraints.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
-<div class="collapse mt-1 p-0" id="scholten2025model">
+<div class="collapse mt-1 p-0" id="scholten2026model">
 	<div class="card card-body">
-		Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, it also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method - Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes three key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that aligns with real-world privacy constraints.
+		Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, but also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method–Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes four key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that better aligns with real-world privacy constraints.
 	</div>
 </div>
 </div></li>
@@ -946,11 +943,11 @@
 	
 
 <br />
-<span class="font-italic">arXiv preprint</span>,  2025.
+<span class="font-italic">International Conference on Learning Representations</span>, ICLR 2026.
 </div>
 <div class="btn-group pt-1 flex-wrap" role="group">
 	
-	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#beyer2025sampling" aria-expanded="false" aria-controls="beyer2025sampling">Abs</a>
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#beyer2026sampling" aria-expanded="false" aria-controls="beyer2026sampling">Abs</a>
 	
 	
 		<a role="button" href="https://www.cs.cit.tum.de/daml/sampling-aware-attacks/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
@@ -966,31 +963,34 @@
 		<a role="button" href="https://github.com/LLM-QC/AdversariaLLM" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Code</a>
 	
 	
-  	<a role="button" onclick="var txt=`@misc{beyer2025sampling,
+  	<a role="button" onclick="var txt=`@inproceedings{beyer2026sampling,
   title = {Sampling-aware Adversarial Attacks Against Large Language Models},
   author = {Beyer, Tim and Scholten, Yan and Schwinn*, Leo and Günnemann*, Stephan},
-  year = {2025},
-  eprint = {2507.04446},
-  archiveprefix = {arXiv},
-  primaryclass = {cs.LG},
+  booktitle = {The Fourteenth International Conference on Learning Representations},
+  year = {2026},
+  organization = {International Conference on Learning Representations},
+  abbr = {ICLR},
   url = {https://arxiv.org/abs/2507.04446},
   pdf = {https://arxiv.org/pdf/2507.04446},
   web = {https://www.cs.cit.tum.de/daml/sampling-aware-attacks/},
-  organization = {arXiv preprint},
   code = {https://github.com/LLM-QC/AdversariaLLM},
-  abs = {To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37\% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.}
+  abs = {To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we empirically determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
-<div class="collapse mt-1 p-0" id="beyer2025sampling">
+<div class="collapse mt-1 p-0" id="beyer2026sampling">
 	<div class="card card-body">
-		To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.
+		To guarantee safe and robust deployment of large language models (LLMs) at scale, it is critical to accurately assess their adversarial robustness. Existing adversarial attacks typically target harmful responses in single-point greedy generations, overlooking the inherently stochastic nature of LLMs and overestimating robustness. We show that for the goal of eliciting harmful responses, repeated sampling of model outputs during the attack complements prompt optimization and serves as a strong and efficient attack vector. By casting attacks as a resource allocation problem between optimization and sampling, we empirically determine compute-optimal trade-offs and show that integrating sampling into existing attacks boosts success rates by up to 37% and improves efficiency by up to two orders of magnitude. We further analyze how distributions of output harmfulness evolve during an adversarial attack, discovering that many common optimization strategies have little effect on output harmfulness. Finally, we introduce a label-free proof-of-concept objective based on entropy maximization, demonstrating how our sampling-aware perspective enables new optimization targets. Overall, our findings establish the importance of sampling in attacks to accurately assess and strengthen LLM safety at scale.
 	</div>
 </div>
-</div></li>
-<li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://yascho.github.io/assets/pdf/scholten2025probabilistic.pdf">A Probabilistic Perspective on Unlearning and Alignment for Large Language Models</a>
+</div></li></ol>
+  </div>
+
+  <h2>2025</h2>
+  <div class="container">
+  	<ol class="bibliography"><li><div class="container mt-2 mb-3 ps-0 pe-0">
+<a class="title" href="https://arxiv.org/pdf/2410.03523">A Probabilistic Perspective on Unlearning and Alignment for Large Language Models</a>
 <br />
 <div class="container authors p-0">
 
@@ -1017,7 +1017,7 @@
 		<a role="button" href="https://www.cs.cit.tum.de/daml/probabilistic-unlearning/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
-		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2025probabilistic.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+		<a role="button" href="https://arxiv.org/pdf/2410.03523" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
 	
@@ -1036,18 +1036,18 @@
   title = {A Probabilistic Perspective on Unlearning and Alignment for Large Language Models},
   booktitle = {The Thirteenth International Conference on Learning Representations},
   year = {2025},
-  url = {https://openreview.net/forum?id=51WraMid8K},
   organization = {International Conference on Learning Representations},
   abbr = {ICLR},
   web = {https://www.cs.cit.tum.de/daml/probabilistic-unlearning/},
-  pdf = {https://yascho.github.io/assets/pdf/scholten2025probabilistic.pdf},
+  url = {https://arxiv.org/abs/2410.03523},
+  pdf = {https://arxiv.org/pdf/2410.03523},
   poster = {https://yascho.github.io/assets/pdf/scholten2025probabilistic-poster.pdf},
   slides = {https://yascho.github.io/assets/pdf/scholten2025probabilistic-slides.pdf},
   code = {https://github.com/yascho/probabilistic-unlearning},
   abs = {Comprehensive evaluation of Large Language Models (LLMs) is an open research problem. Existing evaluations rely on deterministic point estimates generated via greedy decoding. However, we find that deterministic evaluations fail to capture the whole output distribution of a model, yielding inaccurate estimations of model capabilities. This is particularly problematic in critical contexts such as unlearning and alignment, where precise model evaluations are crucial. To remedy this, we introduce the first formal probabilistic evaluation framework for LLMs. Namely, we propose novel metrics with high probability guarantees concerning the output distribution of a model. Our metrics are application-independent and allow practitioners to make more reliable estimates about model capabilities before deployment. Our experimental analysis reveals that deterministic evaluations falsely indicate successful unlearning and alignment, whereas our probabilistic evaluations better capture model capabilities. We show how to overcome challenges associated with probabilistic outputs in a case study on unlearning by introducing (1) a novel loss based on entropy optimization, and (2) adaptive temperature scaling. We demonstrate that our approach significantly enhances unlearning in probabilistic settings on recent benchmarks. Overall, our proposed shift from point estimates to probabilistic evaluations of output distributions represents an important step toward comprehensive evaluations of LLMs.},
   howpublished = {Oral}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="scholten2025probabilistic">
@@ -1057,7 +1057,7 @@
 </div>
 </div></li>
 <li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://yascho.github.io/assets/pdf/scholten2025provably.pdf">Provably Reliable Conformal Prediction Sets in the Presence of Data Poisoning</a>
+<a class="title" href="https://arxiv.org/pdf/2410.09878">Provably Reliable Conformal Prediction Sets in the Presence of Data Poisoning</a>
 <br />
 <div class="container authors p-0">
 
@@ -1080,7 +1080,7 @@
 		<a role="button" href="https://www.cs.cit.tum.de/daml/reliable-conformal-prediction/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
-		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2025provably.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+		<a role="button" href="https://arxiv.org/pdf/2410.09878" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
 	
@@ -1097,17 +1097,17 @@
   title = {Provably Reliable Conformal Prediction Sets in the Presence of Data Poisoning},
   booktitle = {The Thirteenth International Conference on Learning Representations},
   year = {2025},
-  url = {https://openreview.net/forum?id=ofuLWn8DFZ},
   organization = {International Conference on Learning Representations},
   abbr = {ICLR},
-  pdf = {https://yascho.github.io/assets/pdf/scholten2025provably.pdf},
+  url = {https://arxiv.org/abs/2410.09878},
+  pdf = {https://arxiv.org/pdf/2410.09878},
   poster = {https://yascho.github.io/assets/pdf/scholten2025provably-poster.pdf},
   web = {https://www.cs.cit.tum.de/daml/reliable-conformal-prediction/},
   code = {https://github.com/yascho/reliable_conformal_prediction},
   abs = {Conformal prediction provides model-agnostic and distribution-free uncertainty quantification through prediction sets that are guaranteed to include the ground truth with any user-specified probability. Yet, conformal prediction is not reliable under poisoning attacks where adversaries manipulate both training and calibration data, which can significantly alter prediction sets in practice. As a solution, we propose reliable prediction sets (RPS): the first efficient method for constructing conformal prediction sets with provable reliability guarantees under poisoning. To ensure reliability under training poisoning, we introduce smoothed score functions that reliably aggregate predictions of classifiers trained on distinct partitions of the training data. To ensure reliability under calibration poisoning, we construct multiple prediction sets, each calibrated on distinct subsets of the calibration data. We then aggregate them into a majority prediction set, which includes a class only if it appears in a majority of the individual sets. Both proposed aggregations mitigate the influence of datapoints in the training and calibration data on the final prediction set. We experimentally validate our approach on image classification tasks, achieving strong reliability while maintaining utility and preserving coverage on clean data. Overall, our approach represents an important step towards more trustworthy uncertainty quantification in the presence of data poisoning.},
   howpublished = {Spotlight}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="scholten2025provably">
@@ -1178,7 +1178,7 @@
   organization = {arXiv preprint},
   abs = {Misaligned research objectives have considerably hindered progress in adversarial robustness research over the past decade. For instance, an extensive focus on optimizing target metrics, while neglecting rigorous standardized evaluation, has led researchers to pursue ad-hoc heuristic defenses that were seemingly effective. Yet, most of these were exposed as flawed by subsequent evaluations, ultimately contributing little measurable progress to the field. In this position paper, we illustrate that current research on the robustness of large language models (LLMs) risks repeating past patterns with potentially worsened real-world implications. To address this, we argue that realigned objectives are necessary for meaningful progress in adversarial alignment. To this end, we build on established cybersecurity taxonomy to formally define differences between past and emerging threat models that apply to LLMs. Using this framework, we illustrate that progress requires disentangling adversarial alignment into addressable sub-problems and returning to core academic principles, such as measureability, reproducibility, and comparability. Although the field presents significant challenges, the fresh start on adversarial robustness offers the unique opportunity to build on past experience while avoiding previous mistakes.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="schwinn2025adversarial">
@@ -1192,7 +1192,7 @@
   <h2>2024</h2>
   <div class="container">
   	<ol class="bibliography"><li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://arxiv.org/abs/2310.04285">Assessing Robustness via Score-Based Adversarial Image Generation</a>
+<a class="title" href="https://arxiv.org/pdf/2310.04285">Assessing Robustness via Score-Based Adversarial Image Generation</a>
 <br />
 <div class="container authors p-0">
 
@@ -1231,7 +1231,7 @@
 		<a role="button" href="https://www.cs.cit.tum.de/daml/scoreag/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
-		<a role="button" href="https://arxiv.org/abs/2310.04285" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+		<a role="button" href="https://arxiv.org/pdf/2310.04285" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
 	
@@ -1248,11 +1248,11 @@
   year = {2024},
   url = {https://openreview.net/forum?id=7Oqb6zlGWl},
   abbr = {TMLR},
-  pdf = {https://arxiv.org/abs/2310.04285},
+  pdf = {https://arxiv.org/pdf/2310.04285},
   web = {https://www.cs.cit.tum.de/daml/scoreag/},
   abs = {Most adversarial attacks and defenses focus on perturbations within small lp-norm constraints. However, lp threat models cannot capture all relevant semantics-preserving perturbations, and hence, the scope of robustness evaluations is limited. In this work, we introduce Score-Based Adversarial Generation (ScoreAG), a novel framework that leverages the advancements in score-based generative models to generate unrestricted adversarial examples that overcome the limitations of lp-norm constraints. Unlike traditional methods, ScoreAG maintains the core semantics of images while generating adversarial examples, either by transforming existing images or synthesizing new ones entirely from scratch. We further exploit the generative capability of ScoreAG to purify images, empirically enhancing the robustness of classifiers. Our extensive empirical evaluation demonstrates that ScoreAG improves upon the majority of state-of-the-art attacks and defenses across multiple benchmarks. This work highlights the importance of investigating adversarial examples bounded by semantics rather than lp-norm constraints. ScoreAG represents an important step towards more encompassing robustness assessments.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="kollovieh2024assessing">
@@ -1266,7 +1266,7 @@
   <h2>2023</h2>
   <div class="container">
   	<ol class="bibliography"><li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://yascho.github.io/assets/pdf/scholten2023hierarchical.pdf">Hierarchical Randomized Smoothing</a>
+<a class="title" href="https://arxiv.org/pdf/2310.16221">Hierarchical Randomized Smoothing</a>
 <br />
 <div class="container authors p-0">
 
@@ -1297,7 +1297,7 @@
 		<a role="button" href="https://www.cs.cit.tum.de/daml/hierarchical-smoothing/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
-		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2023hierarchical.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+		<a role="button" href="https://arxiv.org/pdf/2310.16221" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
 	
@@ -1318,18 +1318,18 @@
   title = {Hierarchical Randomized Smoothing},
   booktitle = {Thirty-seventh Conference on Neural Information Processing Systems},
   year = {2023},
-  url = {https://openreview.net/forum?id=6IhNHKyuJO},
+  url = {https://arxiv.org/abs/2310.16221},
+  pdf = {https://arxiv.org/pdf/2310.16221},
   organization = {Advances in Neural Information Processing Systems},
   abbr = {NeurIPS},
   slides = {https://yascho.github.io/assets/pdf/scholten2023hierarchical-slides.pdf},
   web = {https://www.cs.cit.tum.de/daml/hierarchical-smoothing/},
   code = {https://github.com/yascho/hierarchical_smoothing},
   talk = {https://nips.cc/virtual/2023/poster/72764},
-  pdf = {https://yascho.github.io/assets/pdf/scholten2023hierarchical.pdf},
   poster = {https://yascho.github.io/assets/pdf/scholten2023hierarchical-poster.pdf},
   abs = {Real-world data is complex and often consists of objects that can be decomposed into multiple entities (e.g. images into pixels, graphs into interconnected nodes). Randomized smoothing is a powerful framework for making models provably robust against small changes to their inputs -- by guaranteeing robustness of the majority vote when randomly adding noise before classification. Yet, certifying robustness on such complex data via randomized smoothing is challenging when adversaries do not arbitrarily perturb entire objects (e.g. images) but only a subset of their entities (e.g. pixels). As a solution, we introduce hierarchical randomized smoothing: We partially smooth objects by adding random noise only on a randomly selected subset of their entities. By adding noise in a more targeted manner than existing methods we obtain stronger robustness guarantees while maintaining high accuracy. We initialize hierarchical smoothing using different noising distributions, yielding novel robustness certificates for discrete and continuous domains. We experimentally demonstrate the importance of hierarchical smoothing in image and node classification, where it yields superior robustness-accuracy trade-offs. Overall, hierarchical smoothing is an important contribution towards models that are both -- certifiably robust to perturbations and accurate.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="scholten2023hierarchical">
@@ -1395,7 +1395,7 @@
   code = {https://github.com/jan-schuchardt/group_equivariance_robustness},
   abs = {A machine learning model is traditionally considered robust if its prediction remains (almost) constant under input perturbations with small norm. However, real-world tasks like molecular property prediction or point cloud segmentation have inherent equivariances, such as rotation or permutation equivariance. In such tasks, even perturbations with large norm do not necessarily change an input's semantic content. Furthermore, there are perturbations for which a model's prediction explicitly needs to change. For the first time, we propose a sound notion of adversarial robustness that accounts for task equivariance. We then demonstrate that provable robustness can be achieved by (1) choosing a model that matches the task's equivariances (2) certifying traditional adversarial robustness. Certification methods are, however, unavailable for many models, such as those with continuous equivariances. We close this gap by developing the framework of equivariance-preserving randomized smoothing, which enables architecture-agnostic certification. We additionally derive the first architecture-specific graph edit distance certificates, i.e. sound robustness guarantees for isomorphism equivariant tasks like node classification. Overall, a sound notion of robustness is an important prerequisite for future work at the intersection of robust and geometric machine learning.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="schuchardt2023provable">
@@ -1409,7 +1409,7 @@
   <h2>2022</h2>
   <div class="container">
   	<ol class="bibliography"><li><div class="container mt-2 mb-3 ps-0 pe-0">
-<a class="title" href="https://yascho.github.io/assets/pdf/scholten2022randomized.pdf">Randomized Message-Interception Smoothing: Gray-box Certificates for Graph Neural Networks</a>
+<a class="title" href="https://arxiv.org/pdf/2301.02039">Randomized Message-Interception Smoothing: Gray-box Certificates for Graph Neural Networks</a>
 <br />
 <div class="container authors p-0">
 
@@ -1444,7 +1444,7 @@
 		<a role="button" href="https://www.cs.cit.tum.de/daml/interception-smoothing/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
 	
 	
-		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2022randomized.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+		<a role="button" href="https://arxiv.org/pdf/2301.02039" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
 	
 	
 	
@@ -1466,9 +1466,9 @@
   booktitle = {Advances in Neural Information Processing Systems},
   organization = {Advances in Neural Information Processing Systems},
   year = {2022},
-  url = {https://openreview.net/forum?id=t0VbBTw-o8},
   abbr = {NeurIPS},
-  pdf = {https://yascho.github.io/assets/pdf/scholten2022randomized.pdf},
+  url = {https://arxiv.org/abs/2301.02039},
+  pdf = {https://arxiv.org/pdf/2301.02039},
   code = {https://github.com/yascho/interception_smoothing},
   talk = {https://www.youtube.com/watch?v=rbFiXrh9Snk},
   slides = {https://yascho.github.io/assets/pdf/scholten2022randomized-slides.pdf},
@@ -1476,7 +1476,7 @@
   web = {https://www.cs.cit.tum.de/daml/interception-smoothing/},
   abs = {Randomized smoothing is one of the most promising frameworks for certifying the adversarial robustness of machine learning models, including Graph Neural Networks (GNNs). Yet, existing randomized smoothing certificates for GNNs are overly pessimistic since they treat the model as a black box, ignoring the underlying architecture. To remedy this, we propose novel gray-box certificates that exploit the message-passing principle of GNNs: We randomly intercept messages and carefully analyze the probability that messages from adversarially controlled nodes reach their target nodes. Compared to existing certificates, we certify robustness to much stronger adversaries that control entire nodes in the graph and can arbitrarily manipulate node features. Our certificates provide stronger guarantees for attacks at larger distances, as messages from farther-away nodes are more likely to get intercepted. We demonstrate the effectiveness of our method on various models and datasets. Since our gray-box certificates consider the underlying graph structure, we can significantly improve certifiable robustness by applying graph sparsification.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="scholten2022randomized">
@@ -1552,7 +1552,7 @@
   talk = {https://www.youtube.com/watch?v=aza77qJeZBo},
   abs = {Causal knowledge is seen as one of the key ingredients to advance artificial intelligence. Yet, few knowledge bases comprise causal knowledge to date, possibly due to significant efforts required for validation. Notwithstanding this challenge, we compile CauseNet, a large-scale knowledge base of claimed causal relations between causal concepts. By extraction from different semi- and unstructured web sources, we collect more than 11 million causal relations with an estimated extraction precision of 83% and construct the first large-scale and open-domain causality graph. We analyze the graph to gain insights about causal beliefs expressed on the web and we demonstrate its benefits in basic causal question answering. Future work may use the graph for causal reasoning, computational argumentation, multi-hop question answering, and more.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="heindorf2020causenet">
@@ -1621,7 +1621,7 @@
   code = {https://github.com/heindorf/www19-fair-classification},
   abs = {Crowdsourced knowledge bases like Wikidata suffer from low-quality edits and vandalism, employing machine learning-based approaches to detect both kinds of damage. We reveal that state-of-the-art detection approaches discriminate anonymous and new users: benign edits from these users receive much higher vandalism scores than benign edits from older ones, causing newcomers to abandon the project prematurely. We address this problem for the first time by analyzing and measuring the sources of bias, and by developing a new vandalism detection model that avoids them. Our model FAIR-S reduces the bias ratio of the state-of-the-art vandalism detector WDVD from 310.7 to only 11.9 while maintaining high predictive performance at 0.963 ROC AUC and 0.316 PR AUC.}
 }
-`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
 	
 </div>
 <div class="collapse mt-1 p-0" id="heindorf2019debiasing">
