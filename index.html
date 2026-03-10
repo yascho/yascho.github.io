@@ -155,6 +155,79 @@
 
 <div class="container pe-0 ps-0 ps-md-3">
 	<ol class="bibliography"><li><div class="container mt-2 mb-3 ps-0 pe-0">
+<a class="title" href="https://arxiv.org/pdf/2507.04219">Model Collapse Is Not a Bug but a Feature in Machine Unlearning for LLMs</a>
+<br />
+<div class="container authors p-0">
+
+	
+		<b>Yan Scholten</b>,
+	
+
+	
+		Sophie Xhonneux,
+	
+
+	
+		Leo Schwinn*,
+	
+
+	
+		and Stephan Günnemann*
+	
+
+<br />
+<span class="font-italic">International Conference on Learning Representations</span>, ICLR 2026.
+</div>
+<div class="btn-group pt-1 flex-wrap" role="group">
+	
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#scholten2026model" aria-expanded="false" aria-controls="scholten2026model">Abs</a>
+	
+	
+		<a role="button" href="https://www.cs.cit.tum.de/daml/partial-model-collapse/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Web</a>
+	
+	
+		<a role="button" href="https://arxiv.org/pdf/2507.04219" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
+	
+		<a role="button" href="https://partial-model-collapse-unlearning.github.io/" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Blogpost</a>
+	
+	
+	
+		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2026model-slides.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Slides</a>
+	
+	
+		<a role="button" href="https://yascho.github.io/assets/pdf/scholten2026model-poster.pdf" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Poster</a>
+	
+	
+		<a role="button" href="https://github.com/yascho/partial-model-collapse-unlearning" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Code</a>
+	
+	
+  	<a role="button" onclick="var txt=`@inproceedings{scholten2026model,
+  title = {Model Collapse Is Not a Bug but a Feature in Machine Unlearning for LLMs},
+  author = {Scholten, Yan and Xhonneux, Sophie and Schwinn*, Leo and Günnemann*, Stephan},
+  booktitle = {The Fourteenth International Conference on Learning Representations},
+  organization = {International Conference on Learning Representations},
+  year = {2026},
+  abbr = {ICLR},
+  url = {https://arxiv.org/abs/2507.04219},
+  pdf = {https://arxiv.org/pdf/2507.04219},
+  blog = {https://partial-model-collapse-unlearning.github.io/},
+  web = {https://www.cs.cit.tum.de/daml/partial-model-collapse/},
+  slides = {https://yascho.github.io/assets/pdf/scholten2026model-slides.pdf},
+  poster = {https://yascho.github.io/assets/pdf/scholten2026model-poster.pdf},
+  code = {https://github.com/yascho/partial-model-collapse-unlearning},
+  abs = {Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, but also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method--Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes four key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that better aligns with real-world privacy constraints.}
+}
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+	
+</div>
+<div class="collapse mt-1 p-0" id="scholten2026model">
+	<div class="card card-body">
+		Current unlearning methods for LLMs optimize on the private information they seek to remove by incorporating it into their fine-tuning data. We argue this not only risks reinforcing exposure to sensitive data, but also fundamentally contradicts the principle of minimizing its use. As a remedy, we propose a novel unlearning method–Partial Model Collapse (PMC), which does not require unlearning targets in the unlearning objective. Our approach is inspired by recent observations that training generative models on their own generations leads to distribution collapse, effectively removing information from model outputs. Our central insight is that model collapse can be leveraged for machine unlearning by deliberately triggering it for data we aim to remove. We theoretically analyze that our approach converges to the desired outcome, i.e. the model unlearns the data targeted for removal. We empirically demonstrate that PMC overcomes four key limitations of existing unlearning methods that explicitly optimize on unlearning targets, and more effectively removes private information from model outputs while preserving general model utility. Overall, our contributions represent an important step toward more comprehensive unlearning that better aligns with real-world privacy constraints.
+	</div>
+</div>
+</div></li>
+<li><div class="container mt-2 mb-3 ps-0 pe-0">
 <a class="title" href="https://arxiv.org/pdf/2410.03523">A Probabilistic Perspective on Unlearning and Alignment for Large Language Models</a>
 <br />
 <div class="container authors p-0">
