@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@YanScholten" />
 <meta name="twitter:creator" content="@Yan Scholten" />
 <script type="application/ld+json">
-{"name":"Yan Scholten","author":{"@type":"Person","name":"Yan Scholten"},"url":"https://yascho.github.io","@type":"WebSite","description":"PhD student in Computer Science at the Technical University of Munich","headline":"Yan Scholten","dateModified":"2026-09-26T22:00:52+02:00","@context":"https://schema.org"}</script>
+{"name":"Yan Scholten","author":{"@type":"Person","name":"Yan Scholten"},"url":"https://yascho.github.io","@type":"WebSite","description":"PhD student in Computer Science at the Technical University of Munich","headline":"Yan Scholten","dateModified":"2026-10-11T17:12:30+02:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 	<meta name="google-site-verification" content="chbllHIfU7hyPiWimLppN2ds-jk7A3FxoRpNI2xsg8Q" />
@@ -96,9 +96,80 @@
 	<img src="/assets/yan-scholten.jpg" id="me" class="img-fluid float-sm-end mb-3 ms-sm-3 mt-3" alt="Yan Scholten" />
 	<p class="pt-0 pt-sm-2 intro">
 	Hi! Welcome to my tiny website 🙂 I'm a PhD student at <a href="https://www.cit.tum.de/en/cit/home/" target="_blank" rel="noopener noreferrer">TUM</a>, supervised by <a href="https://www.cs.cit.tum.de/en/daml/team/damlguennemann/" target="_blank" rel="noopener noreferrer">Prof. Stephan Günnemann</a>.
-	My research centers on <strong>trustworthy AI</strong>, with a focus on developing methods that make machine learning models safer and more reliable. Currently, my work ranges from adversarial robustness to machine unlearning in <strong>large language models (LLMs)</strong>. When I'm not doing that, you can find me hiking ⛰️ and traveling 🗺️. If any of my research sparks your interest, I'm always happy to chat!<br />
+	My research centers on <strong>trustworthy AI</strong>, with a focus on developing methods that make machine learning models safer and more reliable. When I'm not doing research, you can find me hiking ⛰️ and traveling 🗺️. If any of my research sparks your interest, I'm always happy to chat!<br />
 	</p>
 </div>
+
+<h2 class="mt-4 mt-sm-5 pb-1 text-left">Research Interests</h2>
+<div class="container pe-0 ps-0 ps-md-2">
+  <p class="mb-3">My research centers on <strong>trustworthy AI</strong>, with current work ranging from adversarial robustness and empirical machine unlearning to model compression, with a focus on large language models.<br />Broadly, this work falls into three main research areas:</p>
+  <div class="row gx-3 gy-2 align-items-start interests-row">
+    <div class="col-md-4">
+      <a class="btn collapsed w-100 interest-btn" role="button" data-bs-toggle="collapse" data-bs-target="#interest-safety" aria-expanded="false" aria-controls="interest-safety">AI Safety</a>
+      <div class="collapse mt-1" id="interest-safety">
+        <div class="card card-body interest-card">
+          Making large language models safe and aligned, even under adversarial attacks. This includes probabilistic safety evaluations under attacks and empirical, reliable machine unlearning.
+          <div class="core-works"><strong>Core works</strong>: [<a class="work-ref" data-bs-toggle="tooltip" href="https://arxiv.org/pdf/2410.03523" title="A Probabilistic Perspective on Unlearning and Alignment for Large Language Models (ICLR'25)" target="_blank" rel="noopener noreferrer">1</a>, <a class="work-ref" data-bs-toggle="tooltip" href="https://arxiv.org/pdf/2507.04446" title="Sampling-aware Adversarial Attacks Against Large Language Models (ICLR'26)" target="_blank" rel="noopener noreferrer">2</a>, <a class="work-ref" data-bs-toggle="tooltip" href="https://arxiv.org/pdf/2507.04219" title="Model Collapse Is Not a Bug but a Feature in Machine Unlearning for LLMs (ICLR'26)" target="_blank" rel="noopener noreferrer">3</a>, <a class="work-ref" data-bs-toggle="tooltip" href="https://arxiv.org/pdf/2502.11910" title="Adversarial Alignment for LLMs Requires Simpler, Reproducible, and More Measurable Objectives (Preprint'25)" target="_blank" rel="noopener noreferrer">4</a>]</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <a class="btn collapsed w-100 interest-btn" role="button" data-bs-toggle="collapse" data-bs-target="#interest-certification" aria-expanded="false" aria-controls="interest-certification">Robustness Certification</a>
+      <div class="collapse mt-1" id="interest-certification">
+        <div class="card card-body interest-card">
+          Providing provable guarantees that a model's predictions cannot be changed by adversarial perturbations or data poisoning, for image classifiers, graph neural networks, and beyond.
+          <div class="core-works"><strong>Core works</strong>: [<a class="work-ref" data-bs-toggle="tooltip" href="https://arxiv.org/pdf/2310.16221" title="Hierarchical Randomized Smoothing (NeurIPS'23)" target="_blank" rel="noopener noreferrer">1</a>, <a class="work-ref" data-bs-toggle="tooltip" href="https://arxiv.org/pdf/2301.02039" title="Randomized Message-Interception Smoothing: Gray-box Certificates for Graph Neural Networks (NeurIPS'22)" target="_blank" rel="noopener noreferrer">2</a>, <a class="work-ref" data-bs-toggle="tooltip" href="https://arxiv.org/pdf/2605.21780" title="Provable Robustness against Backdoor Attacks via the Primal-Dual Perspective on Differential Privacy (NeurIPS'26)" target="_blank" rel="noopener noreferrer">3</a>, <a class="work-ref" data-bs-toggle="tooltip" href="https://arxiv.org/pdf/2410.09878" title="Provably Reliable Conformal Prediction Sets in the Presence of Data Poisoning (ICLR'25)" target="_blank" rel="noopener noreferrer">4</a>, <a class="work-ref" data-bs-toggle="tooltip" href="https://openreview.net/pdf?id=kQuvO5gaNr" title="Certifying Graph Neural Networks Against Label and Structure Poisoning (ICML'26)" target="_blank" rel="noopener noreferrer">5</a>, <a class="work-ref" data-bs-toggle="tooltip" href="https://openreview.net/pdf?id=mLe63bAYc7" title="Provable Adversarial Robustness for Group Equivariant Tasks (NeurIPS'23)" target="_blank" rel="noopener noreferrer">6</a>]</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <a class="btn collapsed w-100 interest-btn" role="button" data-bs-toggle="collapse" data-bs-target="#interest-compression" aria-expanded="false" aria-controls="interest-compression">Reliable Compression</a>
+      <div class="collapse mt-1" id="interest-compression">
+        <div class="card card-body interest-card">
+          Scalable compression of large language models without losing accuracy or trustworthiness, for example by viewing quantization errors through the lens of robustness and making models robust to them.
+          <div class="core-works"><strong>Core works</strong>: [<a class="work-ref" data-bs-toggle="tooltip" href="https://arxiv.org/pdf/2610.07522" title="Activation Denoising: A Robustness View on Parallel vs Sequential LLM Quantization (Preprint'26)" target="_blank" rel="noopener noreferrer">1</a>]</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+// Bootstrap is loaded at the end of the body, so wait for it
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.work-ref').forEach(function (el) {
+    new bootstrap.Tooltip(el, { placement: 'top', delay: { show: 0, hide: 0 }, animation: false });
+  });
+});
+
+// Give all expanded interest cards the height of the tallest one, so they
+// line up side by side. Skipped on phones, where the boxes are stacked.
+(function () {
+  var cards = document.querySelectorAll('.interest-card');
+
+  function equalize() {
+    cards.forEach(function (c) { c.style.minHeight = ''; });
+    if (!window.matchMedia('(min-width: 768px)').matches) return;
+
+    // Collapsed cards are display:none, so briefly show them to measure
+    var hidden = [];
+    cards.forEach(function (c) {
+      var wrap = c.parentElement;
+      if (!wrap.classList.contains('show')) {
+        wrap.style.display = 'block';
+        hidden.push(wrap);
+      }
+    });
+    var max = 0;
+    cards.forEach(function (c) { max = Math.max(max, c.offsetHeight); });
+    hidden.forEach(function (wrap) { wrap.style.display = ''; });
+    cards.forEach(function (c) { c.style.minHeight = max + 'px'; });
+  }
+
+  equalize();
+  window.addEventListener('load', equalize); // re-measure once web fonts are in
+  window.addEventListener('resize', equalize);
+})();
+</script>
 
 <h2 class="mt-4 mt-sm-5 pb-1 text-left">News</h2>
 <div id="news-box" class="container pe-0 ps-0 ps-md-2 news-collapse">

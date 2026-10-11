@@ -85,6 +85,196 @@
 <!-- 
 <div class="container pe-0 ps-0 ps-md-3">
 	<ol class="bibliography"><li><div class="container mt-2 mb-3 ps-0 pe-0">
+<a class="title" href="https://arxiv.org/pdf/2610.07522">Activation Denoising: A Robustness View on Parallel vs Sequential LLM Quantization</a>
+<br>
+<div class="container authors p-0">
+
+	
+		<b>Yan Scholten</b>,
+	
+
+	
+		Rachel Lawrence,
+	
+
+	
+		James Hensman,
+	
+
+	
+		Stephan Günnemann,
+	
+
+	
+		Alicia Curth,
+	
+
+	
+		and Riccardo Grazzi
+	
+
+<br>
+<span class="font-italic">arXiv preprint</span>,  2026.
+</div>
+<div class="btn-group pt-1 flex-wrap" role="group">
+	
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#scholten2026activationdenoising" aria-expanded="false"  aria-controls="scholten2026activationdenoising">Abs</a>
+	
+	
+	
+		<a role="button" href="https://arxiv.org/pdf/2610.07522" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
+	
+	
+	
+	
+	
+	
+  	<a role="button" onclick="var txt=`@misc{scholten2026activationdenoising,
+  title = {Activation Denoising: A Robustness View on Parallel vs Sequential LLM Quantization},
+  author = {Scholten, Yan and Lawrence, Rachel and Hensman, James and Günnemann, Stephan and Curth, Alicia and Grazzi, Riccardo},
+  year = {2026},
+  organization = {arXiv preprint},
+  eprint = {2610.07522},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.LG},
+  url = {https://arxiv.org/abs/2610.07522},
+  pdf = {https://arxiv.org/pdf/2610.07522},
+  abs = {Post-training quantization is a powerful tool for compressing large language models. The most scalable methods quantize every layer in parallel, but quantization errors then compound through the residual stream, as no layer corrects for the errors of the layers before it. Sequential quantization accounts for this error compounding by re-calibrating each layer on the already-quantized outputs of its predecessors, yielding stronger results but at the cost of a serial schedule that becomes a bottleneck at scale. As a solution, we propose parallel quantization with activation denoising, which recovers much of the sequential benefit while keeping quantization fully parallel. Rather than re-calibrating layer-by-layer, we take a robustness perspective and model the upstream error as noise, regularizing to be robust to it through a preprocessing step followed by metric-weighted rounding. Applied at every layer, this regularization forms a depth-compounding smoothness penalty that dampens how strongly quantization errors amplify through the model. Unlike orthogonal rotations commonly used in quantization, which must preserve the model's function, we multiply the weights by a more general linear transformation. We find that the two are complementary and their effects compound. Empirically, our robustness regularization recovers a significant part of sequential quantization's benefit in a single parallel pass, at a fraction of its time. Overall, by treating compounding quantization errors as a robustness problem, we offer a principled foundation for more efficient and accurate LLM quantization at scale.}
+}
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed bibtex-btn" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+	
+</div>
+<div class="collapse mt-1 p-0" id="scholten2026activationdenoising">
+	<div class="card card-body">
+		Post-training quantization is a powerful tool for compressing large language models. The most scalable methods quantize every layer in parallel, but quantization errors then compound through the residual stream, as no layer corrects for the errors of the layers before it. Sequential quantization accounts for this error compounding by re-calibrating each layer on the already-quantized outputs of its predecessors, yielding stronger results but at the cost of a serial schedule that becomes a bottleneck at scale. As a solution, we propose parallel quantization with activation denoising, which recovers much of the sequential benefit while keeping quantization fully parallel. Rather than re-calibrating layer-by-layer, we take a robustness perspective and model the upstream error as noise, regularizing to be robust to it through a preprocessing step followed by metric-weighted rounding. Applied at every layer, this regularization forms a depth-compounding smoothness penalty that dampens how strongly quantization errors amplify through the model. Unlike orthogonal rotations commonly used in quantization, which must preserve the model’s function, we multiply the weights by a more general linear transformation. We find that the two are complementary and their effects compound. Empirically, our robustness regularization recovers a significant part of sequential quantization’s benefit in a single parallel pass, at a fraction of its time. Overall, by treating compounding quantization errors as a robustness problem, we offer a principled foundation for more efficient and accurate LLM quantization at scale.
+	</div>
+</div>
+</div></li>
+<li><div class="container mt-2 mb-3 ps-0 pe-0">
+<a class="title" href="https://arxiv.org/pdf/2605.21780">Provable Robustness against Backdoor Attacks via the Primal-Dual Perspective on Differential Privacy</a>
+<br>
+<div class="container authors p-0">
+
+	
+		Aman Saxena,
+	
+
+	
+		Jan Schuchardt,
+	
+
+	
+		<b>Yan Scholten</b>,
+	
+
+	
+		and Stephan Günnemann
+	
+
+<br>
+<span class="font-italic">Advances in Neural Information Processing Systems</span>, NeurIPS 2026.
+</div>
+<div class="btn-group pt-1 flex-wrap" role="group">
+	
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#saxena2026provable" aria-expanded="false"  aria-controls="saxena2026provable">Abs</a>
+	
+	
+	
+		<a role="button" href="https://arxiv.org/pdf/2605.21780" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
+	
+	
+	
+	
+	
+	
+  	<a role="button" onclick="var txt=`@inproceedings{saxena2026provable,
+  title = {Provable Robustness against Backdoor Attacks via the Primal-Dual Perspective on Differential Privacy},
+  author = {Saxena, Aman and Schuchardt, Jan and Scholten, Yan and Günnemann, Stephan},
+  booktitle = {The Fortieth Annual Conference on Neural Information Processing Systems},
+  organization = {Advances in Neural Information Processing Systems},
+  abbr = {NeurIPS},
+  year = {2026},
+  url = {https://openreview.net/forum?id=I4p58bdzvx},
+  pdf = {https://arxiv.org/pdf/2605.21780},
+  abs = {Randomized smoothing provides a powerful framework for certifying robustness against adversarial perturbations by injecting randomized noise either into the training process (against poisoning attacks) or model inputs (against evasion attacks). Yet, extending these guarantees to hold against backdoor attacks, where adversaries jointly perturb both training and test data, remains challenging. In particular, certifying general mechanisms requires tight, compositional guarantees over heterogeneous randomized components, which are not jointly supported by existing approaches. We address this gap by proposing a general framework that numerically composes robustness guarantees for arbitrary mechanisms while remaining tightly connected to black-box randomized smoothing guarantees. To achieve this, we establish a connection between randomized smoothing and the dual perspective of differential privacy, enabling us to leverage advances in the analysis of differentially private mechanisms together with tight numerical composition. This yields a modular framework in which robustness guarantees are derived by reasoning about the privacy of individual components and composing them end-to-end. We instantiate our framework for DP-SGD and Deep Partition Aggregation with inference-time smoothing, deriving joint robustness guarantees against both training-time and inference-time attacks. Empirically, we demonstrate the effectiveness of our framework on MNIST and CIFAR-10. Overall, we provide a principled and general framework for certifying robustness under complex joint threat models and mechanisms, laying the groundwork for future research on unified certification methods towards guarantees under more complex real-world adversaries.
+    }
+}
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed bibtex-btn" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+	
+</div>
+<div class="collapse mt-1 p-0" id="saxena2026provable">
+	<div class="card card-body">
+		Randomized smoothing provides a powerful framework for certifying robustness against adversarial perturbations by injecting randomized noise either into the training process (against poisoning attacks) or model inputs (against evasion attacks). Yet, extending these guarantees to hold against backdoor attacks, where adversaries jointly perturb both training and test data, remains challenging. In particular, certifying general mechanisms requires tight, compositional guarantees over heterogeneous randomized components, which are not jointly supported by existing approaches. We address this gap by proposing a general framework that numerically composes robustness guarantees for arbitrary mechanisms while remaining tightly connected to black-box randomized smoothing guarantees. To achieve this, we establish a connection between randomized smoothing and the dual perspective of differential privacy, enabling us to leverage advances in the analysis of differentially private mechanisms together with tight numerical composition. This yields a modular framework in which robustness guarantees are derived by reasoning about the privacy of individual components and composing them end-to-end. We instantiate our framework for DP-SGD and Deep Partition Aggregation with inference-time smoothing, deriving joint robustness guarantees against both training-time and inference-time attacks. Empirically, we demonstrate the effectiveness of our framework on MNIST and CIFAR-10. Overall, we provide a principled and general framework for certifying robustness under complex joint threat models and mechanisms, laying the groundwork for future research on unified certification methods towards guarantees under more complex real-world adversaries.
+  
+	</div>
+</div>
+</div></li>
+<li><div class="container mt-2 mb-3 ps-0 pe-0">
+<a class="title" href="https://openreview.net/pdf?id=kQuvO5gaNr">Certifying Graph Neural Networks Against Label and Structure Poisoning</a>
+<br>
+<div class="container authors p-0">
+
+	
+		Lukas Gosch,
+	
+
+	
+		Xichuan Chen,
+	
+
+	
+		<b>Yan Scholten</b>,
+	
+
+	
+		and Stephan Günnemann
+	
+
+<br>
+<span class="font-italic">International Conference on Machine Learning</span>, ICML 2026.
+</div>
+<div class="btn-group pt-1 flex-wrap" role="group">
+	
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#gosch2026certifying" aria-expanded="false"  aria-controls="gosch2026certifying">Abs</a>
+	
+	
+	
+		<a role="button" href="https://openreview.net/pdf?id=kQuvO5gaNr" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
+	
+	
+	
+	
+	
+		<a role="button" href="https://github.com/p-CXTN/ST-GPA" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Code</a>
+	
+	
+  	<a role="button" onclick="var txt=`@inproceedings{gosch2026certifying,
+  title = {Certifying Graph Neural Networks Against Label and Structure Poisoning},
+  author = {Gosch, Lukas and Chen, Xichuan and Scholten, Yan and Günnemann, Stephan},
+  booktitle = {Forty-third International Conference on Machine Learning},
+  organization = {International Conference on Machine Learning},
+  year = {2026},
+  abbr = {ICML},
+  url = {https://openreview.net/pdf?id=kQuvO5gaNr},
+  pdf = {https://openreview.net/pdf?id=kQuvO5gaNr},
+  code = {https://github.com/p-CXTN/ST-GPA},
+  abs = {Robust machine learning for graph-structured data has made significant progress against test-time attacks, yet certified robustness to poisoning - where adversaries manipulate the training data - remains largely underexplored. For image data, state-of-the-art poisoning certificates rely on partitioning-and-aggregation schemes. However, we show that these methods fail when applied in the graph domain due to the inherent label and structure sparsity found in common graph datasets, making effective graph-partitioning difficult. To address this challenge, we propose a novel semi-supervised learning framework called deep Self-Training Graph Partition Aggregation (ST-GPA), which enriches each graph partition with informative pseudo-labels and synthetic edges, enabling effective certification against node-label and graph-structure poisoning under sparse conditions. Our method is architecture-agnostic, scales to large numbers of partitions, and consistently and significantly improves robustness guarantees against both label and structure poisoning across multiple benchmarks, while maintaining strong clean accuracy. Overall, our results establish a promising direction for certifiably robust learning on graph-structured data against poisoning under sparse conditions.
+    }
+}
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed bibtex-btn" data-toggle="tooltip" data-delay='{"show":"500"}' data-placement="top" title="Copied!">BibTeX</a>
+	
+</div>
+<div class="collapse mt-1 p-0" id="gosch2026certifying">
+	<div class="card card-body">
+		Robust machine learning for graph-structured data has made significant progress against test-time attacks, yet certified robustness to poisoning - where adversaries manipulate the training data - remains largely underexplored. For image data, state-of-the-art poisoning certificates rely on partitioning-and-aggregation schemes. However, we show that these methods fail when applied in the graph domain due to the inherent label and structure sparsity found in common graph datasets, making effective graph-partitioning difficult. To address this challenge, we propose a novel semi-supervised learning framework called deep Self-Training Graph Partition Aggregation (ST-GPA), which enriches each graph partition with informative pseudo-labels and synthetic edges, enabling effective certification against node-label and graph-structure poisoning under sparse conditions. Our method is architecture-agnostic, scales to large numbers of partitions, and consistently and significantly improves robustness guarantees against both label and structure poisoning across multiple benchmarks, while maintaining strong clean accuracy. Overall, our results establish a promising direction for certifiably robust learning on graph-structured data against poisoning under sparse conditions.
+  
+	</div>
+</div>
+</div></li>
+<li><div class="container mt-2 mb-3 ps-0 pe-0">
 <a class="title" href="https://arxiv.org/pdf/2507.04219">Model Collapse Is Not a Bug but a Feature in Machine Unlearning for LLMs</a>
 <br>
 <div class="container authors p-0">
@@ -850,6 +1040,196 @@
   <h2>2026</h2>
   <div class="container">
   	<ol class="bibliography"><li><div class="container mt-2 mb-3 ps-0 pe-0">
+<a class="title" href="https://arxiv.org/pdf/2610.07522">Activation Denoising: A Robustness View on Parallel vs Sequential LLM Quantization</a>
+<br />
+<div class="container authors p-0">
+
+	
+		<b>Yan Scholten</b>,
+	
+
+	
+		Rachel Lawrence,
+	
+
+	
+		James Hensman,
+	
+
+	
+		Stephan Günnemann,
+	
+
+	
+		Alicia Curth,
+	
+
+	
+		and Riccardo Grazzi
+	
+
+<br />
+<span class="font-italic">arXiv preprint</span>,  2026.
+</div>
+<div class="btn-group pt-1 flex-wrap" role="group">
+	
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#scholten2026activationdenoising" aria-expanded="false" aria-controls="scholten2026activationdenoising">Abs</a>
+	
+	
+	
+		<a role="button" href="https://arxiv.org/pdf/2610.07522" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
+	
+	
+	
+	
+	
+	
+  	<a role="button" onclick="var txt=`@misc{scholten2026activationdenoising,
+  title = {Activation Denoising: A Robustness View on Parallel vs Sequential LLM Quantization},
+  author = {Scholten, Yan and Lawrence, Rachel and Hensman, James and Günnemann, Stephan and Curth, Alicia and Grazzi, Riccardo},
+  year = {2026},
+  organization = {arXiv preprint},
+  eprint = {2610.07522},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.LG},
+  url = {https://arxiv.org/abs/2610.07522},
+  pdf = {https://arxiv.org/pdf/2610.07522},
+  abs = {Post-training quantization is a powerful tool for compressing large language models. The most scalable methods quantize every layer in parallel, but quantization errors then compound through the residual stream, as no layer corrects for the errors of the layers before it. Sequential quantization accounts for this error compounding by re-calibrating each layer on the already-quantized outputs of its predecessors, yielding stronger results but at the cost of a serial schedule that becomes a bottleneck at scale. As a solution, we propose parallel quantization with activation denoising, which recovers much of the sequential benefit while keeping quantization fully parallel. Rather than re-calibrating layer-by-layer, we take a robustness perspective and model the upstream error as noise, regularizing to be robust to it through a preprocessing step followed by metric-weighted rounding. Applied at every layer, this regularization forms a depth-compounding smoothness penalty that dampens how strongly quantization errors amplify through the model. Unlike orthogonal rotations commonly used in quantization, which must preserve the model's function, we multiply the weights by a more general linear transformation. We find that the two are complementary and their effects compound. Empirically, our robustness regularization recovers a significant part of sequential quantization's benefit in a single parallel pass, at a fraction of its time. Overall, by treating compounding quantization errors as a robustness problem, we offer a principled foundation for more efficient and accurate LLM quantization at scale.}
+}
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed bibtex-btn" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+	
+</div>
+<div class="collapse mt-1 p-0" id="scholten2026activationdenoising">
+	<div class="card card-body">
+		Post-training quantization is a powerful tool for compressing large language models. The most scalable methods quantize every layer in parallel, but quantization errors then compound through the residual stream, as no layer corrects for the errors of the layers before it. Sequential quantization accounts for this error compounding by re-calibrating each layer on the already-quantized outputs of its predecessors, yielding stronger results but at the cost of a serial schedule that becomes a bottleneck at scale. As a solution, we propose parallel quantization with activation denoising, which recovers much of the sequential benefit while keeping quantization fully parallel. Rather than re-calibrating layer-by-layer, we take a robustness perspective and model the upstream error as noise, regularizing to be robust to it through a preprocessing step followed by metric-weighted rounding. Applied at every layer, this regularization forms a depth-compounding smoothness penalty that dampens how strongly quantization errors amplify through the model. Unlike orthogonal rotations commonly used in quantization, which must preserve the model’s function, we multiply the weights by a more general linear transformation. We find that the two are complementary and their effects compound. Empirically, our robustness regularization recovers a significant part of sequential quantization’s benefit in a single parallel pass, at a fraction of its time. Overall, by treating compounding quantization errors as a robustness problem, we offer a principled foundation for more efficient and accurate LLM quantization at scale.
+	</div>
+</div>
+</div></li>
+<li><div class="container mt-2 mb-3 ps-0 pe-0">
+<a class="title" href="https://arxiv.org/pdf/2605.21780">Provable Robustness against Backdoor Attacks via the Primal-Dual Perspective on Differential Privacy</a>
+<br />
+<div class="container authors p-0">
+
+	
+		Aman Saxena,
+	
+
+	
+		Jan Schuchardt,
+	
+
+	
+		<b>Yan Scholten</b>,
+	
+
+	
+		and Stephan Günnemann
+	
+
+<br />
+<span class="font-italic">Advances in Neural Information Processing Systems</span>, NeurIPS 2026.
+</div>
+<div class="btn-group pt-1 flex-wrap" role="group">
+	
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#saxena2026provable" aria-expanded="false" aria-controls="saxena2026provable">Abs</a>
+	
+	
+	
+		<a role="button" href="https://arxiv.org/pdf/2605.21780" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
+	
+	
+	
+	
+	
+	
+  	<a role="button" onclick="var txt=`@inproceedings{saxena2026provable,
+  title = {Provable Robustness against Backdoor Attacks via the Primal-Dual Perspective on Differential Privacy},
+  author = {Saxena, Aman and Schuchardt, Jan and Scholten, Yan and Günnemann, Stephan},
+  booktitle = {The Fortieth Annual Conference on Neural Information Processing Systems},
+  organization = {Advances in Neural Information Processing Systems},
+  abbr = {NeurIPS},
+  year = {2026},
+  url = {https://openreview.net/forum?id=I4p58bdzvx},
+  pdf = {https://arxiv.org/pdf/2605.21780},
+  abs = {Randomized smoothing provides a powerful framework for certifying robustness against adversarial perturbations by injecting randomized noise either into the training process (against poisoning attacks) or model inputs (against evasion attacks). Yet, extending these guarantees to hold against backdoor attacks, where adversaries jointly perturb both training and test data, remains challenging. In particular, certifying general mechanisms requires tight, compositional guarantees over heterogeneous randomized components, which are not jointly supported by existing approaches. We address this gap by proposing a general framework that numerically composes robustness guarantees for arbitrary mechanisms while remaining tightly connected to black-box randomized smoothing guarantees. To achieve this, we establish a connection between randomized smoothing and the dual perspective of differential privacy, enabling us to leverage advances in the analysis of differentially private mechanisms together with tight numerical composition. This yields a modular framework in which robustness guarantees are derived by reasoning about the privacy of individual components and composing them end-to-end. We instantiate our framework for DP-SGD and Deep Partition Aggregation with inference-time smoothing, deriving joint robustness guarantees against both training-time and inference-time attacks. Empirically, we demonstrate the effectiveness of our framework on MNIST and CIFAR-10. Overall, we provide a principled and general framework for certifying robustness under complex joint threat models and mechanisms, laying the groundwork for future research on unified certification methods towards guarantees under more complex real-world adversaries.
+    }
+}
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed bibtex-btn" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+	
+</div>
+<div class="collapse mt-1 p-0" id="saxena2026provable">
+	<div class="card card-body">
+		Randomized smoothing provides a powerful framework for certifying robustness against adversarial perturbations by injecting randomized noise either into the training process (against poisoning attacks) or model inputs (against evasion attacks). Yet, extending these guarantees to hold against backdoor attacks, where adversaries jointly perturb both training and test data, remains challenging. In particular, certifying general mechanisms requires tight, compositional guarantees over heterogeneous randomized components, which are not jointly supported by existing approaches. We address this gap by proposing a general framework that numerically composes robustness guarantees for arbitrary mechanisms while remaining tightly connected to black-box randomized smoothing guarantees. To achieve this, we establish a connection between randomized smoothing and the dual perspective of differential privacy, enabling us to leverage advances in the analysis of differentially private mechanisms together with tight numerical composition. This yields a modular framework in which robustness guarantees are derived by reasoning about the privacy of individual components and composing them end-to-end. We instantiate our framework for DP-SGD and Deep Partition Aggregation with inference-time smoothing, deriving joint robustness guarantees against both training-time and inference-time attacks. Empirically, we demonstrate the effectiveness of our framework on MNIST and CIFAR-10. Overall, we provide a principled and general framework for certifying robustness under complex joint threat models and mechanisms, laying the groundwork for future research on unified certification methods towards guarantees under more complex real-world adversaries.
+  
+	</div>
+</div>
+</div></li>
+<li><div class="container mt-2 mb-3 ps-0 pe-0">
+<a class="title" href="https://openreview.net/pdf?id=kQuvO5gaNr">Certifying Graph Neural Networks Against Label and Structure Poisoning</a>
+<br />
+<div class="container authors p-0">
+
+	
+		Lukas Gosch,
+	
+
+	
+		Xichuan Chen,
+	
+
+	
+		<b>Yan Scholten</b>,
+	
+
+	
+		and Stephan Günnemann
+	
+
+<br />
+<span class="font-italic">International Conference on Machine Learning</span>, ICML 2026.
+</div>
+<div class="btn-group pt-1 flex-wrap" role="group">
+	
+	<a class="btn btn-primary btn-sm collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#gosch2026certifying" aria-expanded="false" aria-controls="gosch2026certifying">Abs</a>
+	
+	
+	
+		<a role="button" href="https://openreview.net/pdf?id=kQuvO5gaNr" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">PDF</a>
+	
+	
+	
+	
+	
+	
+		<a role="button" href="https://github.com/p-CXTN/ST-GPA" class="btn btn-primary btn-sm collapsed" target="_blank" rel="noopener noreferrer">Code</a>
+	
+	
+  	<a role="button" onclick="var txt=`@inproceedings{gosch2026certifying,
+  title = {Certifying Graph Neural Networks Against Label and Structure Poisoning},
+  author = {Gosch, Lukas and Chen, Xichuan and Scholten, Yan and Günnemann, Stephan},
+  booktitle = {Forty-third International Conference on Machine Learning},
+  organization = {International Conference on Machine Learning},
+  year = {2026},
+  abbr = {ICML},
+  url = {https://openreview.net/pdf?id=kQuvO5gaNr},
+  pdf = {https://openreview.net/pdf?id=kQuvO5gaNr},
+  code = {https://github.com/p-CXTN/ST-GPA},
+  abs = {Robust machine learning for graph-structured data has made significant progress against test-time attacks, yet certified robustness to poisoning - where adversaries manipulate the training data - remains largely underexplored. For image data, state-of-the-art poisoning certificates rely on partitioning-and-aggregation schemes. However, we show that these methods fail when applied in the graph domain due to the inherent label and structure sparsity found in common graph datasets, making effective graph-partitioning difficult. To address this challenge, we propose a novel semi-supervised learning framework called deep Self-Training Graph Partition Aggregation (ST-GPA), which enriches each graph partition with informative pseudo-labels and synthetic edges, enabling effective certification against node-label and graph-structure poisoning under sparse conditions. Our method is architecture-agnostic, scales to large numbers of partitions, and consistently and significantly improves robustness guarantees against both label and structure poisoning across multiple benchmarks, while maintaining strong clean accuracy. Overall, our results establish a promising direction for certifiably robust learning on graph-structured data against poisoning under sparse conditions.
+    }
+}
+`; txt = txt.replace(/\b(organization|abbr|web|pdf|code|blog|howpublished|abs|slides|talk|poster)\s*=\s*\{.*?\},?\s*\n?/gm, ''); txt = txt.replace(/^\s*}/gm, '}'); copy(txt);" class="btn btn-primary btn-sm collapsed bibtex-btn" data-toggle="tooltip" data-delay="{&quot;show&quot;:&quot;500&quot;}" data-placement="top" title="Copied!">BibTeX</a>
+	
+</div>
+<div class="collapse mt-1 p-0" id="gosch2026certifying">
+	<div class="card card-body">
+		Robust machine learning for graph-structured data has made significant progress against test-time attacks, yet certified robustness to poisoning - where adversaries manipulate the training data - remains largely underexplored. For image data, state-of-the-art poisoning certificates rely on partitioning-and-aggregation schemes. However, we show that these methods fail when applied in the graph domain due to the inherent label and structure sparsity found in common graph datasets, making effective graph-partitioning difficult. To address this challenge, we propose a novel semi-supervised learning framework called deep Self-Training Graph Partition Aggregation (ST-GPA), which enriches each graph partition with informative pseudo-labels and synthetic edges, enabling effective certification against node-label and graph-structure poisoning under sparse conditions. Our method is architecture-agnostic, scales to large numbers of partitions, and consistently and significantly improves robustness guarantees against both label and structure poisoning across multiple benchmarks, while maintaining strong clean accuracy. Overall, our results establish a promising direction for certifiably robust learning on graph-structured data against poisoning under sparse conditions.
+  
+	</div>
+</div>
+</div></li>
+<li><div class="container mt-2 mb-3 ps-0 pe-0">
 <a class="title" href="https://arxiv.org/pdf/2507.04219">Model Collapse Is Not a Bug but a Feature in Machine Unlearning for LLMs</a>
 <br />
 <div class="container authors p-0">
